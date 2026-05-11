@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ec3215ed473803100a1452e1d16d43b4" label="Course" max_length="40" name="x_221517_nowtrai_0_course" type="collection">
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element choice="1" label="Integraton State" max_length="40" name="integraton_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Integration Error Message" max_length="4000" name="integration_error_message" type="string"/>
+    </element>
+</database>

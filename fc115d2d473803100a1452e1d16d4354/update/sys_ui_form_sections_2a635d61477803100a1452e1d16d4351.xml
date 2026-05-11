@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="2a635d61477803100a1452e1d16d4351" sys_domain="global" table="x_221517_nowtrai_0_course" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6635d61477803100a1452e1d16d4364</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_221517_nowtrai_0_course" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">2a635d61477803100a1452e1d16d4351</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">f83219e9473803100a1452e1d16d43f2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>62635d61477803100a1452e1d16d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_221517_nowtrai_0_course" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">2a635d61477803100a1452e1d16d4351</sys_ui_form>
+            <sys_ui_section caption="Integration" display_value="Integration" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">ee635d61477803100a1452e1d16d434f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_221517_nowtrai_0_course</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a635d61477803100a1452e1d16d4351</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_221517_nowtrai_0_course</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+            <sys_update_name>sys_ui_form_sections_2a635d61477803100a1452e1d16d4351</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

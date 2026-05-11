@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Integration" section_id="ee635d61477803100a1452e1d16d434f" sys_domain="global" table="x_221517_nowtrai_0_course" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>integraton_state</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_id>ee635d61477803100a1452e1d16d4379</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Integration" display_value="Integration" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">ee635d61477803100a1452e1d16d434f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_id>6e635d61477803100a1452e1d16d437a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Integration" display_value="Integration" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">ee635d61477803100a1452e1d16d434f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_id>ea635d61477803100a1452e1d16d437b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Integration" display_value="Integration" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">ee635d61477803100a1452e1d16d434f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>integration_error_message</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_id>6a635d61477803100a1452e1d16d437c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Integration" display_value="Integration" name="x_221517_nowtrai_0_course" sys_domain="global" view="Default view">ee635d61477803100a1452e1d16d434f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Integration</caption>
+            <header>false</header>
+            <name>x_221517_nowtrai_0_course</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-11 17:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee635d61477803100a1452e1d16d434f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_221517_nowtrai_0_course</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+            <sys_update_name>sys_ui_section_ee635d61477803100a1452e1d16d434f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-11 17:54:43</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
