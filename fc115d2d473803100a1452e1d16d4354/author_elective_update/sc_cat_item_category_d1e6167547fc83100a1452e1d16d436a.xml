@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Training Enrollment Request">afb2a1f1477883100a1452e1d16d43f6</sc_cat_item>
+        <sc_category display_value="NowTraining">7543a535477883100a1452e1d16d4384</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 17:28:01</sys_created_on>
+        <sys_id>d1e6167547fc83100a1452e1d16d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NowTraining.Training Enrollment Request</sys_name>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_update_name>sc_cat_item_category_d1e6167547fc83100a1452e1d16d436a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 17:28:01</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</application>
+        <file_path/>
+        <instance_id>25f898e22bc36658323ef9f66e91bfb2</instance_id>
+        <instance_name>dev351695</instance_name>
+        <name>sc_cat_item_category_d1e6167547fc83100a1452e1d16d436a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Training Enrollment Request">afb2a1f1477883100a1452e1d16d43f6</sc_cat_item><sc_category display_value="NowTraining">7543a535477883100a1452e1d16d4384</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-12 17:28:01</sys_created_on><sys_id>d1e6167547fc83100a1452e1d16d436a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NowTraining.Training Enrollment Request</sys_name><sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package><sys_policy/><sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope><sys_update_name>sc_cat_item_category_d1e6167547fc83100a1452e1d16d436a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-12 17:28:01</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>557329958</payload_hash>
+        <record_name>NowTraining.Training Enrollment Request</record_name>
+        <reverted_from/>
+        <source>57f111ed47f403100a1452e1d16d43e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 17:28:01</sys_created_on>
+        <sys_id>dde6167547fc83100a1452e1d16d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e1d3b3b5b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 17:28:01</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>d5e61675d5fc831060055d91e6a85270</update_guid>
+        <update_guid_history>d5e61675d5fc831060055d91e6a85270:557329958</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="NowTraining.Training Enrollment Request">0137de7547fc83100a1452e1d16d430c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 17:29:22</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>a893359307014ce2840ba7f940e053c9</sys_id>
+        <sys_metadata>d1e6167547fc83100a1452e1d16d436a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NowTraining.Training Enrollment Request</sys_name>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_scope_delete display_value="">3fee10b77bc14e10b49272a4cb85d100</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_d1e6167547fc83100a1452e1d16d436a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_d1e6167547fc83100a1452e1d16d436a">dde6167547fc83100a1452e1d16d4371</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 17:29:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

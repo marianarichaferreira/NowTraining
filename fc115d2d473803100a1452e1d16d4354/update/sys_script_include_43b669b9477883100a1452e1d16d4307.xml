@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_221517_nowtrai_0.NowTrainingScript</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>NowTrainingScript</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var NowTrainingScript = Class.create();
+NowTrainingScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    enrolled: function(trainingId, userId) {
+        var gr = new GlideRecord('x_221517_nowtrai_0_enrollment');
+        gr.addQuery('x_221517_nowtrai_0_training', trainingId);
+        gr.addQuery('x_221517_nowtrai_0_enrollment_student', userId);
+        gr.query();
+        return gr.hasNext();
+    },
+
+    getCourseEnrollments: function(courseId, userId) {
+        var ga = new GlideAggregate('x_221517_nowtrai_0_enrollment');
+        ga.addQuery('x_221517_nowtrai_0_enrollment_student', userId);
+        ga.addQuery('x_221517_nowtrai_0_training.x_221517_nowtrai_0_training_course', courseId);
+        ga.addAggregate('COUNT');
+        ga.query();
+        return ga.next() ? ga.getAggregate('COUNT') : 0;
+    },
+
+    getEnrolled: function(trainingId) {
+        var ga = new GlideAggregate('x_221517_nowtrai_0_enrollment');
+        ga.addQuery('x_221517_nowtrai_0_training', trainingId);
+        ga.addAggregate('COUNT');
+        ga.query();
+        return ga.next() ? ga.getAggregate('COUNT') : 0;
+    },
+
+    getAvailableTrainings: function() {
+        var userId = gs.getUserID();
+        var availableTrainings = [];
+
+        var gr = new GlideRecord('x_221517_nowtrai_0_training');
+        gr.query();
+
+        while (gr.next()) {
+            var trainingId = gr.getUniqueValue();
+            var courseId = gr.course.toString();
+            var trainingDate = new GlideDateTime(gr.training_date);
+            var instructorId = gr.instructor.toString();
+
+            // stry 7
+            if (this.enrolled(trainingId, userId)) continue;
+
+            // stry 8
+            if (this.getCourseEnrollments(courseId, userId) >= 3) continue;
+
+            // stry 9
+            var occupied = this.getEnrolled(trainingId);
+            var capacity = parseInt('gr.capacity');
+            if (occupied >= capacity) continue;
+
+            // str 10
+            if (instructorId == userId) continue;
+
+            // str 11
+            var tomorrow = new GlideDateTime();
+            tomorrow.addDaysLocalTime(1);
+            if (trainingDate.getNumericValue() < tomorrow.getNumericValue()) continue;
+
+            availableTrainings.push(trainingId);
+        }
+
+        return "sys_idIN" + availableTrainings.join(',');
+    },
+
+	//stry 3
+    checkTrainingDate: function() {
+        var courseId = this.getParameter('sysparm_course');
+        var newDate = this.getParameter('sysparm_date');
+		
+		var gdt = new GlideDateTime();
+		gdt.setDisplayValue(newDate);
+
+		var formatedDate = gdt.getDate().toString(); 
+
+        var gr = new GlideRecord('x_221517_nowtrai_0_training');
+        gr.addQuery('course', courseId);
+        gr.addQuery('date', 'STARTSWITH', formatedDate);
+        gr.query();
+
+		return gr.hasNext() ? "true" : "false";
+    },
+
+    type: 'NowTrainingScript'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 14:37:00</sys_created_on>
+        <sys_id>43b669b9477883100a1452e1d16d4307</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>NowTrainingScript</sys_name>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_update_name>sys_script_include_43b669b9477883100a1452e1d16d4307</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 19:11:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

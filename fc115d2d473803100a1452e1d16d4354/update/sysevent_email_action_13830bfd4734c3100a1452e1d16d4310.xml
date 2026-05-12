@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_221517_nowtrai_0_enrollment</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+<div style="background: linear-gradient(135deg, #8e44ad 0%, #ff69b4 100%); padding: 30px; text-align: center;">
+<h1 style="color: #ffffff; margin: 0; font-size: 24px; letter-spacing: 1px;">Enrollment Requested</h1>
+</div>
+<div style="padding: 30px; background-color: #ffffff; color: #333333; line-height: 1.6;">
+<p style="font-size: 18px;">Hello, <strong>${opened_by.first_name}</strong>!</p>
+<p>Your enrollment was requested successfully and is awaiting your manager's approval.</p>
+<p>You will be notified when there are new updates.</p>
+<div style="background-color: #f9f9f9; border-left: 4px solid #8e44ad; padding: 15px; margin: 20px 0;">
+<p style="margin: 5px 0;"><strong>Course:</strong> ${course.name}</p>
+<p style="margin: 5px 0;"><strong>Date:</strong> ${date}</p>
+<p style="margin: 5px 0;"><strong>State:</strong> <span style="color: #e67e22; font-weight: bold;">Awaiting Approval</span></p>
+</div>
+<p>Click on the button bellow if yout want to enroll on other trainings!</p>
+<div style="text-align: center; margin-top: 30px;"><a style="background-color: #8e44ad; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" href="https://dev351695.service-now.com/sp?id=sc_cat_item&amp;sys_id=afb2a1f1477883100a1452e1d16d43f6&amp;sysparm_category=7543a535477883100a1452e1d16d4384">Enroll on More Trainings</a></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; text-align: center; font-size: 12px; color: #777777;">
+<p style="margin: 0;">NowTraining Team</p>
+</div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Enrollment Requested</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>opened_by</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Enrollment Requested Successfully</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 20:56:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13830bfd4734c3100a1452e1d16d4310</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Enrollment Requested</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_update_name>sysevent_email_action_13830bfd4734c3100a1452e1d16d4310</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 21:07:23</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
