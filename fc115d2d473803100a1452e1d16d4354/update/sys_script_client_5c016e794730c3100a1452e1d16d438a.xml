@@ -8,33 +8,38 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Validate Training Date</name>
+        <name>Validate Training Date (Same Course)</name>
         <order/>
-        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-   if (isLoading || newValue === '') {
-      return;
-   }
+        <script><![CDATA[function onSubmit() {
+    if (g_scratchpad.isFormValid) {
+        return true;
+    }
 
     var course = g_form.getValue('course');
+    var dateVal = g_form.getValue('date');
+    var currentId = g_form.getUniqueValue();
 
-    if (!course) {
-        g_form.clearValue('date');
-        g_form.showFieldMsg('course', 'Select the course first, for date validation.', 'error');
-        return;
+    if (!course || !dateVal) {
+        return true;
     }
-    
+
     var ga = new GlideAjax('NowTrainingScript');
-    ga.addParam('sysparm_name', 'checkTrainingDate'); // Nome da função lá dentro
+    ga.addParam('sysparm_name', 'checkTrainingDate');
     ga.addParam('sysparm_course', course);
-    ga.addParam('sysparm_date', newValue);
+    ga.addParam('sysparm_date', dateVal);
+    ga.addParam('sysparm_current_id', currentId);
 
     ga.getXMLAnswer(function(answer) {
         if (answer === 'true') {
-            g_form.clearValue('date');
             alert('There is already a training of this course scheduled for this date! Please, select another date.');
+            g_form.clearValue('date');
+        } else {
+            g_scratchpad.isFormValid = true;
+            g_form.submit(); 
         }
     });
-   
+
+    return false;
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -42,17 +47,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5c016e794730c3100a1452e1d16d438a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Validate Training Date</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Validate Training Date (Same Course)</sys_name>
         <sys_overrides/>
         <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
         <sys_policy/>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name>sys_script_client_5c016e794730c3100a1452e1d16d438a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 19:32:15</sys_updated_on>
+        <sys_updated_on>2026-05-13 13:21:53</sys_updated_on>
         <table>x_221517_nowtrai_0_training</table>
-        <type>onChange</type>
+        <type>onSubmit</type>
         <ui_type>0</ui_type>
         <view/>
     </sys_script_client>

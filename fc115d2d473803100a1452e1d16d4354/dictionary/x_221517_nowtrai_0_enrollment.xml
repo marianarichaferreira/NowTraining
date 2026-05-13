@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="1425d965477803100a1452e1d16d432a" extends="task" label="Enrollment" max_length="40" name="x_221517_nowtrai_0_enrollment" type="collection">
         <element label="Reproval Reason" max_length="4000" name="reproval_reason" type="string"/>
-        <element label="Student" max_length="32" name="student" reference="sys_user" type="reference"/>
+        <element label="Student" max_length="32" name="student" reference="sys_user" reference_qual="roles=x_221517_nowtrai_0.student^EQ" reference_qual_condition="roles=x_221517_nowtrai_0.student^EQ" type="reference"/>
         <element label="Training" max_length="32" name="training" reference="x_221517_nowtrai_0_training" type="reference"/>
     </element>
 </database>

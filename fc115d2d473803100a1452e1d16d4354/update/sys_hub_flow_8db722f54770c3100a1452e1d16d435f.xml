@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=8841000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=90791000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27800</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>enrollment_lifecycle</internal_name>
-        <label_cache>[{"name":"a57e53c9-8c07-4837-a69a-07816e2f5078.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"da2c1b98-fc93-49ab-8385-dfa6b97caecc":["condition"],"dd0bd974-bb9b-4ed7-8796-0d4dadf7b375":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Enrollment Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"a57e53c9-8c07-4837-a69a-07816e2f5078":["approval_conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Enrollment Record","reference":"x_221517_nowtrai_0_enrollment","reference_display":"Enrollment","type":"reference","base_type":"reference","usedInstances":{"e9bfa7c7-abbb-4bc5-8ef6-6148d96b669c":["record"],"a57e53c9-8c07-4837-a69a-07816e2f5078":["record"],"6f549e83-6d4b-4bb9-835a-273d1a91637b":["record"],"68656d14-7953-48c9-95b4-9f6069f39cb7":["record"],"540f668d-e905-4d0b-832e-f28e14921476":["record"],"67f96a99-3186-446b-bdb5-af8a4b74d7a0":["record"],"f8b7c037-cd07-4c47-ac89-8e11bbd3ce75":["conditions"],"e0d34d8b-f32d-4751-a9ce-e56b78d4bb84":["record"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"14eb02da-f326-467c-9a0a-8433c5b26595":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7.Record.roles","label":"2 - Look Up Record➛User Record➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user","column_name":"roles","usedInstances":{}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Enrollment Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_221517_nowtrai_0_enrollment","column_name":"sys_created_by","usedInstances":{"cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7":["conditions"]}},{"name":"Created_1.current.training.capacity","label":"Trigger - Record Created➛Enrollment Record➛Training➛Capacity","reference":"","reference_display":"Capacity","type":"integer","base_type":"integer","parent_table_name":"x_221517_nowtrai_0_training","column_name":"capacity","usedInstances":{"1a970d04-6ab6-4535-8d73-894b15887c42":["condition"]}},{"name":"bd8d1efa-dffe-486f-a171-9ee8da1dd584.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"1a970d04-6ab6-4535-8d73-894b15887c42":["condition"],"924c9d21-4058-49df-9a70-e9e210635404":["capacity"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.training","label":"Trigger - Record Created➛Enrollment Record➛Training","reference":"x_221517_nowtrai_0_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_221517_nowtrai_0_enrollment","column_name":"training","usedInstances":{"bd8d1efa-dffe-486f-a171-9ee8da1dd584":["conditions"],"924c9d21-4058-49df-9a70-e9e210635404":["record"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Enrollment Table","reference":"x_221517_nowtrai_0_enrollment","reference_display":"Enrollment","type":"table_name","base_type":"table_name","usedInstances":{"bd8d1efa-dffe-486f-a171-9ee8da1dd584":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.opened_by.roles","label":"Trigger - Record Created➛Enrollment Record➛Opened by➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user","column_name":"roles","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Enrollment Record","reference":"x_221517_nowtrai_0_enrollment","reference_display":"Enrollment","type":"reference","base_type":"reference","usedInstances":{"e9bfa7c7-abbb-4bc5-8ef6-6148d96b669c":["record"],"a57e53c9-8c07-4837-a69a-07816e2f5078":["record"],"6f549e83-6d4b-4bb9-835a-273d1a91637b":["record"],"68656d14-7953-48c9-95b4-9f6069f39cb7":["record"],"540f668d-e905-4d0b-832e-f28e14921476":["record"],"67f96a99-3186-446b-bdb5-af8a4b74d7a0":["record"],"f8b7c037-cd07-4c47-ac89-8e11bbd3ce75":["conditions"],"e0d34d8b-f32d-4751-a9ce-e56b78d4bb84":["record"],"35513c91-ca8d-48a6-8817-1b1f8903c84f":["record"],"570d5d08-3bfa-4e8c-8bc6-a52d26ae5681":["record"],"1a027e08-ba84-4a42-a92b-845b42f7eb57":["record"]},"attributes":{}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Enrollment Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"a57e53c9-8c07-4837-a69a-07816e2f5078":["approval_conditions"]}},{"name":"a57e53c9-8c07-4837-a69a-07816e2f5078.approval_state","label":"11 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"da2c1b98-fc93-49ab-8385-dfa6b97caecc":["condition"],"dd0bd974-bb9b-4ed7-8796-0d4dadf7b375":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>e3698fb94774c3100a1452e1d16d4333</master_snapshot>
         <master_snapshot_digest/>
         <name>Enrollment Lifecycle</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8db722f54770c3100a1452e1d16d435f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Enrollment Lifecycle</sys_name>
         <sys_overrides/>
         <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name>sys_hub_flow_8db722f54770c3100a1452e1d16d435f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:50</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:41</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -85,14 +85,14 @@
         <identifier>8db722f54770c3100a1452e1d16d435f</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 21:08:50</sys_created_on>
-        <sys_id>bb698fb94774c3100a1452e1d16d43c2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-05-13 19:54:41</sys_created_on>
+        <sys_id>e702c49e47b847100a1452e1d16d4321</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:50</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:41</sys_updated_on>
         <trigger display_value="">b3698fb94774c3100a1452e1d16d43c1</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=8db722f54770c3100a1452e1d16d435f^sys_idNOT INbb698fb94774c3100a1452e1d16d43c2"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=8db722f54770c3100a1452e1d16d435f^sys_idNOT INe702c49e47b847100a1452e1d16d4321"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=8db722f54770c3100a1452e1d16d435f"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=8db722f54770c3100a1452e1d16d435f^sys_idNOT IN85b722f54770c3100a1452e1d16d4364"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -300,29 +300,77 @@
         <trigger_type>record_create</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8db722f54770c3100a1452e1d16d435f^sys_idNOT IN125303fd4734c3100a1452e1d16d43e8,125303fd4734c3100a1452e1d16d43ec,1e5303fd4734c3100a1452e1d16d43dc,525303fd4734c3100a1452e1d16d43e0,525303fd4734c3100a1452e1d16d43ed,925303fd4734c3100a1452e1d16d43e2,925303fd4734c3100a1452e1d16d43ee,de5303fd4734c3100a1452e1d16d43e6"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8db722f54770c3100a1452e1d16d435f^sys_idNOT IN0e59730e477847100a1452e1d16d430e,109aabce47f447100a1452e1d16d43e6,125303fd4734c3100a1452e1d16d43e8,125303fd4734c3100a1452e1d16d43ec,1e5303fd4734c3100a1452e1d16d43dc,525303fd4734c3100a1452e1d16d43e0,525303fd4734c3100a1452e1d16d43ed,925303fd4734c3100a1452e1d16d43e2,925303fd4734c3100a1452e1d16d43ee,949aabce47f447100a1452e1d16d43eb,d09aabce47f447100a1452e1d16d43e9,de5303fd4734c3100a1452e1d16d43e6,f327fbc6477847100a1452e1d16d43eb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 19:16:38</sys_created_on>
+        <sys_id>0e59730e477847100a1452e1d16d430e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
+        <ui_id>cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcFgkMFOg2QJP20u0SlEjFxNKkSlJJHMP/vUORsrW2Y1uoUyTYk6HhkHwz895o5G/LkJHwMiSTaJJPJsNxEkX9fhSNRv0Mx2naH2VplOJB2AkFnlPwNDjlFB4fMC/ts15oVGqqwESYLjhefPUrX5w1mzFOFBXh5bfvnbDACs4xsHK53Fo6FQjHKeXgeueRbAEzi2L9iKo1Z/vY3BZ8cgtSEQsl6oT0yVBBKGDIMde0E86xINhItVhbFMXkRvCNYcaEgRND6/yk2TPcO46sX04hqoy6tfUj8gly5vwaG3xrVJmZUnnXbCZZRrXLB6E5Lrm5atqcw01hmBRuiwvb7Za8nItPLh3h+oC6HmCBQiFCCxuoRe7DyG9n8vFzjXLKRJUTv8hlhvn6CRujWFoai2cZUk7ncBCa46Jg4h4VSj6wajNgmXfvOTx0cy4f4VLN7kUXZxZ4F/KKu1OwX1fmr1gxG8VfcExFmZxxYAhyJdSyVFUqH1DGS10tKCy0OytcdSwFrzjWehM5pBz9KC1ulwcfMXJJs1syxQrzJxzxQH1wq06theFBCk42lMukIMyi0A1BWDFUvPu7hP1kubwC3hhKUNzNSgUpNl2rmcxb08Vq9Y+SnGrn/4R6vXgYJ0jIR4iToahrf4TNLyZzJnaF9htubCni4xmsRXzVTOG+tHo579g+7jvAyzk+m5wHUfSeBA2Xvz09t1eoS8ERmcbkIMnIhk9aKoNcLhs63dVRa56fAKHm+Y1lZpAuXkLlaZ4zysm+t9bULmy9tXr/z7fWmyQ5ACLIVY8JzkQ1ggDQ12L/8CD10niLZxW9GkObtWGd7WoAB0YGz62VcAKcWgm3cHdw5/DsgVj3+4oy272+NnoB9M8mgH7vPAJYrsNcJ3JPzuup01az9n+2/njbHyjY2BCv9gms1Z1x2zt7q10B91spuEk2t3L9AufOPJ6+oMjOa7aAGWz19yGnX/TIyD01m9trLyLNI+b/7lv3jEN1oarwXmHUjQ9+baWNUZflaA6VYwVM5IpmQA6NsKIol6UgyM/i/xmCIfdKG++822g+U9CPCCQIMzAzGlTewdq75Yv4eBx1Kj/kQR2Iv00HEEhQBRKsA2kXdpumNTjjcHrupjXFjFfVgM+solFOqpRULzSuI4U8wIgTu9qJoOKzgvr1trdPAnvb3xGs7+Kb/fytKaM4HfTwKOnHcRTFEUmicZLE41Gaj3AyyDcaRUiLDLopnJwDVeB4VFOjrnO0239cS23baE5AVVPwWgr7fd1LTGBhQX2DGtZx4L6hpBI+07HY6ih38J74Y+rxe74O31xXeRf/YJXsbjvTzrQ31681N5Tsi2A/SvrBUmxMo944JtnFOImTi0FORhcTgocXeJIOkz6h2SA/5yjw/Sd8D2qfAxYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0e59730e477847100a1452e1d16d430e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>State = Approved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:04</sys_created_on>
+        <sys_id>109aabce47f447100a1452e1d16d43e6</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
+        <ui_id>35513c91-ca8d-48a6-8817-1b1f8903c84f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPwfgjydq8jWSBQddCO/rSFSNb14lAljxJzsdC/vuubdkxSelS6EuY3+6XdM7xufbLnnBGpmQEzA9ug0kaBVEU+n54MwqSSZQEIYsoQECGRNIcsFNDqjTDeE1FWSX2+5kGaoHFgZeWWoO0hwPWGTeFoLtn14aZdMUFwzqZvrwOSUE1nmhBk+n+pHQpJEETENj62GI6xWh3RRUzlZY54op5m7xzk3NXGXyfYwWHKjiBPySwtSAZIJCMCgNDklPJqFV6R6ZWl5hA0uxBil3XseLSNkRzujX8D9488qu+DJBZ6kTowtgJ1KSzObX0CU9Obak7vRRPwTSaMMhoKeysn2saHgrLlWxGLE1EO61Emcv7RhHSHdB7H6VBEFBUPCvkDa3saaU2jy3IBZe1JI6iUCkVXUSt1TwpbQVnT0BArXFOi4LLZVxoteb1MELJvaXAwMuE2uCdhi+lR9MKt4eqUm+B+XmdfqaaVyR+4DE4fBgSszMzQY05UkEN499lhaQh5ijEtQq1BHHthGo41bywX/GqNTjgh6EzfTJ+z2Hp7dFQvTOPxt/GYRiMgy+xVBurKY/9GKRWQlQynC/At37tY6twAdB2FX7WBngbuNuGs9xdf3Zw3xTcLow/bRdurmkXHI2rX4Z/rYAfvvuR7Tmpdr3p2d9Y/Oj/Kn0/YtG520+qH/P7Bahavy84CGbegNmaHXKEZSFuYJ8Y3hUHz67Y/QA+zfXBxK+fK/L+f/MfeP0LT/klpf4IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=109aabce47f447100a1452e1d16d43e6"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
         <attributes/>
         <comment>Enrollment Approved</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
-        <order>6</order>
+        <order>14</order>
         <parent_ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>125303fd4734c3100a1452e1d16d43e8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>540f668d-e905-4d0b-832e-f28e14921476</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPFSdqk3KExJKQNJMZ2g5Dl2MdgyfnAcQpd1f++4yT9hBbEGLvohY/t4/O+x0+dm7mnhHfsxSIVYiJJIAkhAQlGJCQppJDxZJxAmHoDr2A54EoDvDQCx1OmGxeYz78YYBYEJUPeGAOFXSxwXqi60mz2q1+GEX6vtMB57/jmduBVzGBGC8Y7nu9M2VkFVLMMNG48LXmTY9Kj81PM8dZql7uvluXulu/OwLHos1Plgjjl6iEDD54sFALwNMl0DQMvZ4VgtjSzVQRVi8tCrwP3qrCd0pw91eo35o9Ct04CSuO9C6sh7R1amlMqDpeVVWXRRSzL9NK5Ujd5cdFJcN6CZI22G942NeaDytXsirCmwYLkj/vy8Wp53pkqWnV9tbrkTK9GzFqjssZC7drRqOuX7OnC315sDGhoF+asqlRxRytTTlV7HlafD+80DoZSl49YZq3uiiHjTuoQTWXDM4yftuFfzCin+zumwc3uzJ+Femjg3DVekCCJJgH3k3AU+XHAmZ+lIvNZFspRHI/TcUa8ResxfWicvM6t3hfaWtv6Stv7gEtrblRlT7CYKfRuLAY9FSk5dM+icH2tNnKuyXiiYUhGJKFF+WgNUzSgUJhSa2fUc0K+bs69j5VrV8bRRVfGWyVsbd4jqadlK9bDEn4YLGnwf2DpK/p7Wrbs2YZlqzOfwgrPskxmMPFJxrkfJ5D6acgSH0YBj2QYBUEiX2XlNULiw9dr490oSquk4qxt2ZqRCRNJnCQj/MU8IkHASDwKgQgyFnE0gUOYHJ1UzjkQ7+Zl1e3Vy/K6nuXei21BL8vsuTEb5/TYRIex6f7A3/PE1LMapq6BkDOlaXd19qC0o2E/VvuSbrHGpATuPgSkAi3wAtF2zye8V1uuI4eY7RmBm73+dwBeP294DZb2BlCXgMrS5My1sdWyy208IZBEYepPxiFyC9HIz0QU+QQ5BmAgQ/ERb9ztH7XR8ML7CQAA</values>
+        <values>H4sIAAAAAAAA/9WWyW7bMBCGXyXQ2TJESbbk3IqkAQq0KZCkvQSFMCKHCQFqKUU5cY28e4eSvCXO2qZADz5wuP3zz3yiL5eeEt6hF4tUiJlkgWSMBSyYsJClmGLOk2mCYeqNvBIKpJUGeWUEjeegWxdYLo8MgkWRsTFvjcHS3t3RvFBNrWHxfVhGEX6ttKB57/Dyx8irwdCJFo13uLw39VJJGnLUtPRspem+Rruo3VhUvC1IV6ZWwc/DzuNh5uDTMc3QJieHjTy8tVgKJB0SdIMjr4BSgK3MYh2hpMXXUm8C16q0faIF3DbqF90chW6dRMqMDyash9lgUB+Wx2Dh3JqW29as/aoUx6b3RKCEVtuj7Vi/4GttVVX2WyzkerW70m1RnvaOeOsDturRNiQCa5eoU06XUxby/Lq6OVuJPFFlZ8mQoq446PUIrDUqb62Ts/RadbHP7T6832/U2C0soK5VeZXVppqr7j5SX4yvNA3GUlc3JLNRV+UYuEt1TJWA8QnFj7vwdzDK5f2FjqHN7s5vpfrZ4ifXR4IFSTQLuJ+Ek8iPAw5+norchzyUkzieptOceXcjr1k0RxqaZuMYlSr72bqEe/8Gp7LO7M7prGs4t5kbVdsPJG+Ogz93o4GtlD3VyFG46dutMzd83WZhyCYsycrqxhpQWZBhaSqtnXUPOfu4Pfc64l4gdEXcRddn+4UP0D2Ifd7ee3DaTwzIha9Eru/VPcSlwX9E3JDWnyO34/UucTtu/xPgeJ7nMseZz3LO/TjB1E9DSHycBDySYRQEiXwDcM9hFj/dvVtPWFlZJRWHrogb0GYgkjhJJvSLecSCAFg8CZEJNhVxNMOnWDv4UDsvUbz+mXte9gq6013d+7MZ6NswsAvf2VZ8YC96mr0etbe8dlRgnLv6YQFKZ30vPQLkvdz+MpyPKdkhFqRE7v7HSIVaUNNl3Z53eTrlOYLh1yfuJlfDHs9duncKS4zTHQ/o3i7n+8F98bCnGrTZYEvmDshkZQpwHdFleP+bEM8YJlGY+rNpSN8EjCZ+LqLIZ/SNQASUoXifR/jHb0+5Q9LiCgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=125303fd4734c3100a1452e1d16d43e8"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -330,23 +378,23 @@
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
-        <order>8</order>
-        <parent_ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</parent_ui_id>
+        <order>16</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>125303fd4734c3100a1452e1d16d43ec</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>f8b7c037-cd07-4c47-ac89-8e11bbd3ce75</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjiv5JjtvRQIDBXYboE37kqYERVIxd2lSJamkjuF/71CUbMf32C6avoXDuZyZOTOmcjcNOQ0vQzqIBtlg0O0nUdRuR1Gv1yY4TtN2j6RRijthI5R4zEDT4lQwOD5iUbizmRic51rBGfk/mIZryk0u8ORrpfW+UoEbMuKCaibDy7v7RphjDX4t2FxOV67sJGdI4JQJcHDrwgYfHYbGwZBfGK+n4ALURyS9a6WpwxI1QvbTMkkZhMqwMKwRjrGk2Co9mUs0w/RGioVgxKUFj6FT/mn4M7jvR04vY5AWYf5ufkRVlbyYjBQn7Ca3XEkv8UD9pRLFWH70Cbj6sgwXwtb1BUlhwB/LHWYHokKUfR6pp091wCGXZXrVpVAEWlKfsLWap4VlxvWCCTYGR2gMTeXyAbn+8dIYsIybDwIOzUyoJwhq+INsYuKAN6FEuDkE+XUp/oo1d1n8C25KYmRcQLeRL7pRhS6r8oiIKEx5obE03lc4K2uFfhQOpc+6yg/5EoGCIZrn9j0YPLIqlVmjZnV3J0UGC0oQJSl3Mc1man8rwAOdTq+g5ZZRFDdJoaGkdjb7biyIvIJm/zEC9+sDcJKv40bmajmnQ+ux0XhTkarheSGrhic+2/B0ougPjY/Vxdubnn3z4BPeMxQx3UkCuui3UdoiX7mlqVjn9tEMHXIm6IulfgC42vjGkS1IJ9vwVgTNXIyV7d7667f7m6QnAKLI15tLwWX54wpAz8Pb7k5qpPEKD8r2L+1yJ8OGrLMXB1YFz8dv2bKvNX8PAFkbfgZEwa1HuQF4vV9r9xV122ejbrv1OuoCce6mc/Tzqm0ocP2Gcq2r9Z+dPl7VB3YtGcSz+zn1r46LGb82ZsvFXJnN9quGc5lZ/uZ6C8HO/ELbMmyN3zndIzCt4iE/rOiJ0wdmF9FrLarsExb/b7qv2DWfoTK9k1978c4PgnTptcczNIY+8RyeoJoRoIJBWDOUqUJSVD0+F7Rxfcu4NrZSXt8hn5gttAwUjFxgRywotYO59jk2ywHZ1YYfsqBOr8JgAkgvKNML5um9rhhb9lHnjG+9U/bREHNRlh4+IvKl3jGtld6yk/Z0bUf7D1xYB4KKzwrq9I22ie8bN9serH/FF+mpW4cwnHZauJe04ziK4ogmUT9J4n4vzXo46WSLQUPISAJrETxnQAxwj2oi1F2N1leL341H/9sEdu67YeXiULy18bWS7lO0ldjAAYY+BzXg/SlV+yJVSjAsF/Ts/rGF8Vb+s1Lw29XaeNE/m5r2u37MC/5F8h8F++BI0WdRqx9TctFP4uSik9HexYDi7gUepN2kTRnpZMf/Pt//AuONpydlFAAA</values>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgo0G2AJttLt0tQJBVzlyZVkkqaGP7vHYqUbdiKbaEOkGBv5nBIvpl5b0j52zLmNL6M6TSZ5tPpcDJOkn4/SUajPsFplvVHJEsyPIg7scQLBp4WZ4LB8AGL0o3Nk8FFoRWMkf/BNExTbgqBn74Grw/BBWbInAuqmYwvv33vxAXWsK+FNZfLnalTgQmcMQGudwHZDlD7VKyHqJrztk/by6LPfkJp6qAknZj9tExSBhhyLAzrxAssKbZKP60tmmF6I8XGMOfSwo6xc/5p+DOcO0mcX84gKsL83HqIQpK8Ob/GFt9aXRJb6uBK5ooTZnw+KMtxKezVts073BSWK+mX+LD9aiXKhfzs0xGvN6hrApbSAAhWuEAd8hBGfjtXj19qlDMuq5yESaEIlLEeYWs1z0rr8CxjJtgCNkILIAKX98jVnFeLAcuiey9g0M2FeoRDDb+XXUwc8C7kFXdnYL+uzF+x5i6KP2Gbikw5F8AQ5EtoVKmrVD4gIkpTTWgsjd8rXnUcJa8ENmYTOaQc/Sgdbp+HEDHySXNLiOaF/QBbPLAQ3KpTa2N4kILTDeWIkpQ7FKZZIH+XsANdLq+AOZZRlHZJqSHJdrX6x1gweQfN/mUE5vdl9Ft7tRTe8ahr4V1th92UiiDBPdunpg2CBNOzSXCQJO9JhHD429Nge1X5FByRVkoPkoxu+GSUtsjncktb+wppzfMTINQ8v3HMjLKnl1AFmuecCdp008zcxM5N0/t/3jRvkuQAiCJfPS4Fl9WzAYC+FvuHB6mXpTs8q+i1da84GzZkXwM4sip6bq2EE+DUSriFs6M7j6cBYt3vK8rs9vraGATQP5sA+r3zCGC5DnOdyIac1y9FV83a/9n5411/oODWgnTVJLBWZ6Ztz+yt9gXcb6XgbbL5mesXOHfmJ+ULiuy8ZguYw9JwHvL6RY+c3jO7Ob32oso+YvFf03xgHKoLVYX3Cs/T9OAXUrb1POU5WkDleAGvaM0IkMMgrBnKVSkpCu/nDZFcJXOujQ3O+43mCwP9yEiBMCM7Z1HlHa29W17Ex+OoU/kxj+pAwmkmgkCiKpBoHUi7sNs0rcEZH6fnblozzEVVDfg0KrbKybRW+oXGdaSQBxhxYlc7EVR6VlC/3/aaJNDY/o5gfRff2edvTYThbNDDo3E/TZMkTeg4mYzH6WSU5SM8HuQbjSJkJIFuCjvnQBXYHtXUqOuc7Pcf31LbNpoTUNUUvFbSfUb3xjZysKC+UQ3rOPDQUDKlBMNyp6PcwT3xxyzgD3wdvrmu8i7+dSr53W6mvakx16/1bij5X5L/KNlHR7EJS3qTlJKLyTgdXwxyOrqYUjy8wNNsOO5TRgb5OZ8C338BGKjjIscVAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=125303fd4734c3100a1452e1d16d43ec"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -354,7 +402,31 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment>State = Awaiting Approval</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 20:42:14</sys_created_on>
+        <sys_id>1e5303fd4734c3100a1452e1d16d43dc</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
+        <ui_id>6f549e83-6d4b-4bb9-835a-273d1a91637b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPwfgjydq8jWSBQddCO/rSFSNb14lAljxJzsdC/vuubdkxSelS6EuY3+6XdM7xufbLnnBGpmQEzA9ug0kaBVEU+n54MwqSSZQEIYsoQECGRNIcsFNDqjTDeE1FWSX2+5kGaoHFgZeWWoO0hwPWGTeFoLtn14aZdMUFwzqZvrwOSUE1nmhBk+n+pHQpJEETENj62GI6xWh3RRUzlZY54op5m7xzk3NXGXyfYwWHKjiBPySwtSAZIJCMCgNDklPJqFV6R6ZWl5hA0uxBil3XseLSNkRzujX8D9488qu+DJBZ6kTowtgJ1KSzObX0CU9Obak7vRRPwTSaMMhoKeysn2saHgrLlWxGLE1EO61Emcv7RhHSHdB7H6VBEFBUPCvkDa3saaU2jy3IBZe1JI6iUCkVXUSt1TwpbQVnT0BArXFOi4LLZVxoteb1MELJvaXAwMuE2uCdhi+lR9MKt4eqUm+B+XmdfqaaVyR+4DE4fBgSszMzQY05UkEN499lhaQh5ijEtQq1BHHthGo41bywX/GqNTjgh6EzfTJ+z2Hp7dFQvTOPxt/GYRiMgy+xVBurKY/9GKRWQlQynC/At37tY6twAdB2FX7WBngbuNuGs9xdf3Zw3xTcLow/bRdurmkXHI2rX4Z/rYAfvvuR7Tmpdr3p2d9Y/Oj/Kn0/YuG520+qH/P7Bahavy84CGbegNmaHXKEZSFuYJ8Y3hUHz67Y/QA+zfXBxK+fK/L+f/MfeP0LJZ5h0f4IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e5303fd4734c3100a1452e1d16d43dc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment requested</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
@@ -363,62 +435,38 @@
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
-        <sys_id>1e5303fd4734c3100a1452e1d16d43dc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 20:42:14</sys_updated_on>
-        <ui_id>6f549e83-6d4b-4bb9-835a-273d1a91637b</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1UTWsbMRD9K0bnZdkP2018K3UNPTSBtOSSBqGVxrZAK221Wn/U+L93tKt1HKdNTTCUQnXTjObNe6PHPOyIFGRChiCS9Dod8zzN8yxJsqthWozzIs1EzgBSEhHNSsCXFrixAu8rphof2O0+WGAOBE1j3lgL2u33mBeyrhTb3odnGOFLqQTmyeThMSIVs4jowJLJ7iTlthVQxQpQWDg1vCkRdPBpihjnsu2r73q6p/R9D7yLgE6lD2LK80mTiMDGgRaA7eZM1RCRkmnBnLFbMnG2wQCqFrdabQ8vllK7TmnJNrX8gfjDxL+bA0rjYQqHKw0T6odjJIfbykmju4hjheonZ1RT6ptOgp8tzFmj3NFsmxrxoPKUPYmO4fzL0qzv+n4zqVt1ga0ynKnDjTlnZdE4qP13gIJ2KCWrKqkXtLJmJdtipFLGC4WXeK7MGnvWcqFjxj3vGAfE4hnGp234nlnpRXxGGCzet+Lp98b37WQEwrTV3Aqm7Ufh05pbWbn3CLyCQHMfBbsWo9cMwK+f/vsI88myG5pl6Sh9R7VZO8skTShoa5Tyol9a9+Nx7m0m/uppDG46GudKeFb8G0nBxs9iwcWji7n46i+5ODD6x2z8J/Mm2avb6+inW7/WR8atHS7ab02S5CJ76dOT7BudCiViOhh0qNHZnHuAmQQl6l+I6K0aGtBVaHBYuhfzazpO2vN/915w9z7+BJpHS7osCAAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e5303fd4734c3100a1452e1d16d43dc"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
-        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
-        <attributes/>
-        <comment>Enrollment request created, and awating approval</comment>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
-        <generation_source/>
-        <order>2</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>525303fd4734c3100a1452e1d16d43e0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>e9bfa7c7-abbb-4bc5-8ef6-6148d96b669c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPFSdqk3E1jSEgbSIxxg5Dl2MdgyfnAcQpd1f++4yT9hBbEGLv0sX183vf4iXMz95Twjr1YpEJMJAkkISQgwYiEJIUUMp6MEwhTb+AVLAdcaYCXRuB4ynTjAvP5VwPMgqBkyBtjoLCLBc4LVVeaza77ZRjh90oLnPeOb24HXsUMZrRgvOP5zpSdVUA1y0DjxpOSNzkmPTo7wRxvrXa5+3JZ7m757gwciz47VS6IU64eMvDgyUIhAE+TTNcw8HJWCGZLM1tFULW4KPQ6cK8K2ynN2VOtfmP+KHTrJKA03ruwGtLeoaU5peJwUVlVFl3EskwvnSt1kxfnnQTnLUjWaLvhbVNjPqhcza4IaxosSP68Lx8vl+edqqJV11erS870asSsNSprLNSuHY26esmeLvz9xcaAhnZhzqpKFXe0MuVUtedh9fnwTuNgKHX5iGXW6q4YMu6kDtFUNjzF+EkbvmZGOd0/MA1udmf+KtRDA2eu8YIESTQJuJ+Eo8iPA878LBWZz7JQjuJ4nI4z4i1aj+lD4+R1bvW+0Nba1lfa3gdcWnOjKvsFi5lC78Zi0FORkkP3LArX12oj55qMJxqGZEQSWpSP1jBFAwqFKbV2Rj0n5Nvm3PtYuXJlHJ13ZbxVwtbmPZJ6WrZiPSzhh8GSBv8Hlr6iv6dly55tWLY68yms8CzLZAYTn2Sc+3ECqZ+GLPFhFPBIhlEQJPJVVl4jJD58vTbejaK0SirO2patGSFRGgWZFHESxTwiQcBIPAqBCDIWMY4PYXJ0CSi2xqfn3cCs2r16Wl4XtNx7vq3oZZ09OGbjnJ6b6DA33Rf8PW9MPath6joIOVOadndnD0s7GvZztS/pFmxMSuDuT0Aq0AJvEG33fMKDteU6gojZniG42et/R+DV84bXYGlvAHUJqCxNzlwbWy274MYTAkkUpv5kHCK4EI38TESRTxBkAAYyFB/xyN3+AQWT2BX8CQAA</values>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqniJG1S7lZ0kZBYkArLDUKRY4+pJeeA4xTYinffcZKeSznsstJeenz655/54tzOHcmdYyfkMecjQTxBCPGINyA+iSGGlEXDCPzY6Tk5zQBXamCF5jieUVXbwHx+ooEa4Anps1pryM3LC85zWZWKPt90yzDCplJxnHeOb+96Tkk1nmhAO8fzran3SlI0BYVLJwtN2xrNc2nHvGB1hroSuQiedzvH3czR2RhncJOVQ3oOPBnIOaAOQVUFPSejOaem0M/LCCbNL3O1CkxlbtpEM/pUyV94c+DbdQIwM9aZsBwmnUFtWIypoVdG18zUeulXIRlUrSccBK2VOVmPtQsuSyOLvN1iaKoWuwtVZ/lF64izPGCtHnWFIqC0iVrleDlmIa6mxeNkIfJU5o0lXYqqYFQtR9QYLdPaWDlzp5bX+9xuw/v9BgXNwoyWpczvk1IXM9nch+qz/r3CQV+o4hFlVvI+71NmU+1jJWj/FOPjJnxDtbR5/8BjcLO982cuH2o4s33EiRcFI4+5kT8I3NBj1E1jnro09cUgDIfxMCXOS8+pnqsTRatq5RiWKnmobcKtf51TSWN243TSNJzdzLQszTeUN4POn5dex1ZMDjVy4K/6du3MFV9Pie+TAYmSvHg0msrESyDXhVLWul3Ovq/PfYy4dwhdEHfd9Nl+4R10O7Hz9b1HF+1Eh5z/QeTaXt1DXOz9R8R1af05chtebxK34fY/AY6laSpSGLkkZcwNI4jd2KeRCwOPBcIPPC8SnwDuLczCw9279oTlhZFCMtoUcQUaCeLASwUPoyBkAfE8SsKBD4STIQ9xfIi1owlg+hW+gh9/597WvaDuYlP4/nQ6/FYQbNI3WYt38AWH4WtZ+8xzhxWGmS0gZFSqpG2mV4jcyu0v0/makg1kqRDA7I+MkKA4dl3S7PmSt1NcAdVsempvsjVs+dzEe6OwCDnesYP3ejm/ju7r3Z6qwCSdLYk9IBGFzqjtiCbD7Y9COCIQBX7sjoY+fhQgGLgpDwKX4EcCgILw+de8wne/ARE8WqXjCgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=525303fd4734c3100a1452e1d16d43e0"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
-        <comment/>
-        <compiled_snapshot/>
+        <comment>State = Reproved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
-        <order>9</order>
-        <parent_ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</parent_ui_id>
+        <order>17</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>525303fd4734c3100a1452e1d16d43ed</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 20:42:14</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>67f96a99-3186-446b-bdb5-af8a4b74d7a0</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1V70/bMBD9Vyp/YlIXJW1h0H2aBkibNJDYxBfKLDe+tN4cO7OdQlflf985dkopP8YQ0jRp/VL5zvfuvbsn52JFBCdjMgKeZgfZXj7MhsNBmg72R9l0bzjNBnzIADLSJ4qVgDcN5NpwPC+YrH1gtXpvgDngNEvy2hhQrmkwz4WtJFuex2sYyedCcsyT8cVln1TMIKIDQ8arrZRbVkAlm4LEwkOd1yWC9j4cIsZT2XbVZx3dbfq+B555RKfCBzHl+WRpn8C1A8UB2xVMWuiTkinOnDZLMnamxgCq5qdKLtc35kK5oLRk11b8RPxR6u8VgNLyOIX1kcYJdcPRIofTygmtQsSxqewmp2VdqpMgwc8WClZLtzHb2iIeVJ6yJxEYFp/n+uqs63csVKsuspU6Z3J9Ys4ZMa0dWL8OkNAOpWRVJdSMVkYvRFuMVMpkJvGQFFJfYU8rZiphueed4IBYcozxwzZ8zozwIj4hDBY3rXj6o/Z9g4xImLaaW8G0XRRetbkRlXuHwAuINJt+tOt09zED5Ac3+97AvLHsNR0Mst3sDVX6yhkmaEpBGS2lF33XukebueeZ+Iun0TsJNJ4q4VbxA5KijW/Foot3X8zF+3/JxZHRP2bj35k3HTz6em1suvWr3TCudfjQTuo0HfLRVwNeD5MUV2i1CuGCvw69gd818p+WP9PrUGJTB73Qtv9k1R3AsQDJ7T1j6MweG9BFbLB+tl/M8dle2v7+v94v8noHQSHmGW55z4ceK0AHmN5WTS8Ytldw2vKm+5RKrb/TuqLhI5/EP9Tsx2GTGbiPujaKySPlzHIne/V2oh6A3QonuGvhdiZkMlETck9dYueicDsh47DJHYRvWqgbAJyfZQvgaxM0TXP5C1YjRjGOCQAA</values>
+        <values>H4sIAAAAAAAA/+VWXW/aMBT9K8hPncSiBChr2dNUWmlT10rt1JfSWSa+AW+OndkOLUP8913H5kPQda3Ul2q8IN/ra59zOCfhdkEEJwPSA55mx1k/72bdbidNO0e9bNzvjrMO7zKAjLSJYiXgTgO5NhzXMyZrX1gsTgwwB5xmSV4bA8otl9jnwlaSzW/iNqzkUyE59sng9q5NKmbwRAeGDBY7redCkmwMErderTDtYnTzyq+5zusScVGxKp7HyWHstD4PsYNDHk6Wtgk8OFAcEEjBpIU2KZnizGkzJwNnaiwgaX6p5Hy9YyqUC0RL9mDFb7y5l/p9BSCzPIqwXtIoUCgXQ+bYNZ6cu9qs9dIiBxs04VCwWrqT7VrYcFk5oVUYcWwsV9Na1qW6CIqQ9QFbv0dtEQRUnqdHHmgV11N9f7UCeSZUI0mkKHXO5HrFnDNiXDsPZ0FAQqNxyapKqAmtjJ6JZhihlMlE4iIppL7HO62YqITlHneCqrLkDOvDpnzDjPAkvuIxOLxsEzu3J5JZu6GCGtJftUcSiEUKtFGhkYA2TvDDuRGV+4RXzSACX7aj6ceHTzksP94YauvMjfEfaKeTHWYfqNL3zjBBUwrKaCm9DPsBON3uvSwKzwC6isK3xgCPA49p2Kudb8+2LkIjZuHw1bJw9JayEGm8+TD8KwJp58mH7JaTGtfbLftbhw/9UZ2mXd77bsAzZJKiE6xWoVzw9+Fu4PtxeOn4yxLzDF6rxJwJkNw+QnQVFygRtwMaiO9EJjZbN7G5foW8Wm6yftp83lB6/oM3SaAYah7zjoN96akBdJlp7cy0gu1bBacNE5r1KZVa/6R1RcNfmiR+oQxeIZtMwH3RtVFMnipn5gfZu48j9Zdzd8oJeka4gxEZjdSIPDKX2Kko3EHooJfU3gk/tFCbA1BAy2bA175YLpd3fwBckbWdYQoAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=525303fd4734c3100a1452e1d16d43ed"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -426,23 +474,23 @@
         <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
         <attributes/>
         <comment>Asks for Manager's Approval</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
-        <order>3</order>
+        <order>11</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>925303fd4734c3100a1452e1d16d43e2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>a57e53c9-8c07-4837-a69a-07816e2f5078</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1YTW/bOBD9K4HOjpeyLFn2LWg2QIvuFkjSXuJAoMiRzQVNqZSUxGv4v3coUbZiJ6rhepFt0YsBDufjzcwbivTdyhHcmTijMBnAeDwgsUuIR0joMxJ6EHujYORRRpyeo+gCUFMDSzXH9QOVpRGsVu800AJ45PZZqTWoYr3GfS7yTNLlF6uGEjYXkuO+M7m77zkZ1eixAO1MVjtbxTKDSNIYJBpepqxcoNOz95fo41C0jfV1A3cXvomBa269R8IIccvgIT0HngpQHDBaQmUOPWdBFadFqpfOpNAlCjBp/knJ5UZjLlRRJ7qgT7n4F917A6OXAGbGbBE2y8gWqKlNKhh8ygqRqlpS0Fg2hUtluVB/1xmY0kJCS1m0Slvm6A8yA9mAqBEmN/P08bqJdyVUlZxFK1NG5WZFi0KLuCwgN90ACVVNFjTLhJpFmU4fRGWMUBb9mcRFP5HpI8bMxUz1KTO4+1gg2r9C+WUl/kK1MEn8hW7QeF0lH30tTdw6DQs4qnKuE0atnGmRFRfo8wEswnXPEjVmna1n207X7rY8fYoGA9d3R5FKHwtNRUQiUDqV0qS6z9c/23vHMffWIDir2tY7GP0z4/1sLG2rZaRq15a1bjdrreQQ2obkbWhrEf1kvP0eZWEYeD7+jBKPuAOXhBCEIRsTysIg8IfetskYDxFTGWGTcvS9Je8Jz9MbrJiaNYw8AFxjeGHRnV036F6FbVmaN6EsQwcnY6gb/KQULcXtTm1qycfd7vw3XDbhPivxtYT3pvvBIA7GJOTnPCHx+TD0/HPKgJxD4Prg84D5rvfD/Cdu16HHwxeIlAiQ7TtGs7E/Bq2d48bhyoR6dkgfgHdvJK4s4NcSsQNRLXeO7dMNRUjIG03Fr3vfYJ1kgNbh/U9aatXB3Wgu8qqlr3K4pXEqLh8AvzH+UOPfpfJuWh1M9n4z+X/M5KHfSQV44fRiqeLC4MtbfK7PPMgv1PLz3QuPv36K2FAQL/vYfDoDvV7f75P+WDfHTcb27lJKyJvpOKAkm3ektesskZ2N7X3IGtn5GJ7qWfl24/Fr3tBZJw+S8bbvvMRyIFHb/39MnRrk1JlMHZUqmDq9qWO0IkOISowaCG6zUclWq/W6lpSaWgdua7m15nSZV5o5mwNHUlXSZ5Ka6VZ+yr9fbmyAs0vE/cetaH1bvl+1zX84ZW3/YiGbx0KTSV050f6y+Cf7sgx/D87OcyDaXKHxQ4JH0NHTdP8NWcQMC00UAAA=</values>
+        <values>H4sIAAAAAAAA/+1Y227iOhT9lcrPlHEICYG3qpxKczQXqe3MS6kix3HAR8bJOE5bBvHvsxM7l4GWgRHz0NN5QfK+2GvvrOULd2vEYzRBoyAZsPF4gCMHYxfjwKM4cFnkjvyRSyhGPSTJkkGkYjRVMYwfiChKw3p9qRjRLA6dPi2UYlJvNuCPeZ4Jsvpqw8BCF1zE4EeTu/seyoiCGTVTaLLech0KSZCICQi9rjFtY9SrrBzHKS2WgCvktfGDzZxaz9n7KXggqYSDe4g9aSZjBjgSInLWQ0siY6JTtUITrQowQM3xZylWTcSCS23qXJKnnH+Hhd1BGZcwKIzaHjTD0PbHmJMp0eQGZqa6UE27Uk5ZbloSs4QUQl92bSbgc6Z5Kk2KJpGos1NRLOUn0xDUTND5HEUOIFhW1lkiN2UlN4v08boGecVl1RFbokgpEc2IaK14VOgSzhoxwaoWL0mWcTkPM5U+8CoZoCz7cwGDfiLSR1gz53PZJ7TE3Yeukv4V2KeV+StRvCziI0wDyZseylf5pSB53pYCPQy/FSUSU5gtIay6YFpQ5lHFM30Bqzwwi3nTs3SP6F5u0ZZKZrqW7U/hYOB4ziiU6aNWhIc4ZFKlQpTF77L+n67vOP4fgLHm/60FuYXZsr8ahpXvZ/JXaWefjMNy39nPfWtpyW9Y8wz3A/yKuG/LevXk/xXv2dB3PfgZJS52Bg4OmB8EdIwJDXzfG7othwAB1EBECJ86h7lbBZxgaz8ARk3tC4vj7LrG8SJAS/ccPoycb1H9pjZamg+OpPnLe7zjvyWiF/x2q8vGstPnP6OIcrkvkn8r2PuSR/4g8sc4iM/jBEfnw8D1zgll+Jz5jse82Kee4/4BFWFn384cB8+QNOFMdC9NtWNXTB3PcaI6ANWOqK4srJfgWklVw+dOkCp/6wQ5nbQCjF+Ttt7SBYruJRvrHCT/pYWSexQQLnheMeNFJXQijlPEASBrRfxrUG4LYhv87+jB/auH/78eht5eqnUu5w2raSpjXiLOO6owOzPLL+Tqy90zL+t+CtjAEK36wCEyZ2qzud+Vzu9Oc5y+Dii6eaEXguW/aoJVV3uzs0ldhbX3Qeu0Khue6s3+ykT2Vl4udC/XknHLrbiABgHdu39RzZCBPUOTGZKpZDPUm6EyKizJVZkhAsA1jsq2Xm82xlIoYidwOsM2OyarvIrM6YLFwM3K+pMlrMRg7af4h+yAntT6mxbsbGqastum+uFU4zR94Tun240NqGZ6d8u7p5x3slNu+Fd+p3gmhc1DAo4w2P1OqMn7H0cVnzc2FgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=925303fd4734c3100a1452e1d16d43e2"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -450,76 +498,202 @@
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
         <attributes/>
         <comment>Enrollment Reproved</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
-        <order>10</order>
-        <parent_ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</parent_ui_id>
+        <order>18</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>925303fd4734c3100a1452e1d16d43ee</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>e0d34d8b-f32d-4751-a9ce-e56b78d4bb84</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/8WWXU/bMBSG/wrKdVPFSdqk3E1jSEgbSIxxg5Dl2MdgyfnAcQpd1f++4yT9hBbEGLvohY/t4/O+x0+dm7mnhHfsxSIVYiJJIAkhAQlGJCQppJDxZJxAmHoDr2A54EoDvDQCx1OmGxeYz78aYBYEJUPeGAOFXSxwXqi60mx23S/DCL9XWuC8d3xzO/AqZjCjBeMdz3em7KwCqlkGGjeelLzJMenR2QnmeGu1y92Xy3J3y3dn4Fj02alyQZxy9ZCBB08WCgF4mmS6hoGXs0IwW5rZKoKqxUWh14F7VdhOac6eavUb80ehWycBpfHehdWQ9g4tzSkVh4vKqrLoIpZleulcqZu8OO8kOG9BskbbDW+bGvNB5Wp2RVjTYEHy5335eLk871QVrbq+Wl1yplcjZq1RWWOhdu1o1NVL9nTh7y82BjS0C3NWVaq4o5Upp6o9D6vPh3caB0Opy0css1Z3xZBxJ3WIprLhKcZP2vA1M8rp/oFpcLM781ehHho4c40XJEiiScD9JBxFfhxw5mepyHyWhXIUx+N0nBFv0XpMHxonr3Or94W21ra+0vY+4NKaG1XZL1jMFHo3FoOeipQcumdRuL5WGznXZDzRMCQjktCifLSGKRpQKEyptTPqOSHfNufex8qVK+PovCvjrRK2Nu+R1NOyFethCT8MljT4P7D0Ff09LVv2bMOy1ZlPYYVnWSYzmPgk49yPE0j9NGSJD6OARzKMgiCRr7LyGiHx4eu18W4UpVVScda2bM1IErA0TpIR/mIekSBgJB6FQAQZizhi/BAmR5fgnAPxbl5W3V69LK/rWe493xb0ssyeG7NxTo9NdBib7g/8PU9MPath6hoIOVOadldnD0o7GvZjtS/pFmtMSuDuQ0Aq0AIvEG33fMJ7teU6cojZnhG42et/B+DV84bXYGlvAHUJqCxNzlwbWy273MYTAkkUpv5kHCK3EI38TESRT5BjAAYyFB/xxt3+AQJJFdr7CQAA</values>
+        <values>H4sIAAAAAAAA/9WWyW7bMBCGXyXQ2TJESbbk3Iq4AQK0KZCkvQSFMCKHMQFqKUVlqZF371CSt8TN1qZADz5wuP3zz3yiL5eeEt6hF4tUiJlkgWSMBSyYsJClmGLOk2mCYeqNvBIKpJUGeWUEja9Bty6wXB4ZBIsiY2PeGoOlvb+neaGaWsPdt2EZRfhCaUHz3uHl95FXg6ETLRrvcPlg6qWSNOSoaenZStNDjfaudmNR8bYgXZlaBT8NO+fDzMHJnGZok5PDRh7eWiwFkg4JusGRV0ApwFbmbh2hpMWXUm8CC1XaPtECbhv1k26OQrdOImXGBxPWw2wwqA/LOVg4t6bltjVrvyrFsek9ESih1fZoO9Yv+FJbVZX9Fgu5Xu2udFuUp70j3vqArXq0DYnA2iXqlNPllIU8X1Q3ZyuRx6rsLBlS1BUHvR6BtUblrXVyll6rLva53Yf3+40au4UF1LUqr7LaVNequ4/UF+MrTYOx1NUNyWzUVTkG7lIdUyVgfEzxeRf+Bka5vD/TMbTZ3fm1VD9aPHF9JFiQRLOA+0k4ifw44ODnqch9yEM5ieNpOs2Zdz/ymrvmSEPTbByjUmU/Wpdw79/gVNaZ3TmddQ3nNnOjavuB5F3j4M/9aGArZU81chRu+nbrzA1ft1kYsglLsrK6sQZUFmRYmkprZ91jzj5uz72OuBcIXRF30fXZfuEDdI9in7b3Hpz2EwNy4SuR63t1D3Fp8B8RN6T158jteL1L3I7b/wQ4nue5zHHms5xzP04w9dMQEh8nAY9kGAVBIt8A3HOYxU9379YTVlZWScWhK+IGtCSANE6SCf1iHrEgABZPQmSCTUUcAX+KtYMzdF6ieP0z97zsFXSnu7r3ZzPQt2FgF76zrfjAXvQ0ez1qb3ntqMB47eqHBSid9b30GyAf5PaX4fydkh1iQUrk7n+MVKgFNV3W7XmXp1OeIxi+OHY3uRr2eO7SvVNYYpzueET3djnfD+6Lxz3VoM0GWzJ3QCYrU4DriC7Dh9+EeMYwicLUn01D+iZgNPFzEUU+o28EIqAMxfs8wt9/AdeH+HHiCgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=925303fd4734c3100a1452e1d16d43ee"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
-        <comment>State = Approved</comment>
-        <compiled_snapshot/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <generation_source/>
-        <order>5</order>
+        <order>8</order>
+        <parent_ui_id>1a970d04-6ab6-4535-8d73-894b15887c42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:04</sys_created_on>
+        <sys_id>949aabce47f447100a1452e1d16d43eb</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
+        <ui_id>924c9d21-4058-49df-9a70-e9e210635404</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K8jnNor7RdvbqhXSSixIgLiwKJrYk2LJcbKOA3Sj/vedJE5blYotWi5oe/N8+b2XefVDxZRkczZCGfIZn4ghHw4HYTiYjng8GcZ8IIeAyFmPGUiRKi2KzEo6P4Mu60BVLSyCQxnxQJTWonGBs6CMMqvNhgqlKnIN63tfTxHxpLSkQjZ/eOyxHCyNdmjZvDpInYpNQ4yaSm86cIdg3TqvzzITZUoAI9UFL33n0mfOvi8pQ001HB72GL46NBIJSAK6wB5LwUhwmV2zubMlBYi9vDZ6va14Usa1RFN4LdRvunkU1nUJEjPhRdgeIy9QG06W4OCWJgtX2q1emRJYtJpITKDUbrEfawuuc6cy07Y4iHXXnekyNVetImw7YO97lAWBwLzmWSNvaSW3T9nLTQfyQplGEk9RZwL09gTOWRWXroZTMdTYaJxCntMORLnNnlXTTFDSYKXpECQ6e6E7C7UyAYgad0CqQnBB8WUTvgerahI/aAw1b3qsWBcLDUWxo0IaRr/KGklLzFOIGhUaCaJmE+pmYVXuvtFVz+iBb3p+++PxexsmZruF2pu5c8BrNBjwMT+PTPZSb34URp0B3q7/3S7zMRucALKzwV3z8Y+D9k54E7vc7z27ahPeB+NP88H0K/nA0/jyRvjb+oeDd/9g9zap2fhib/UF5CCUW/8sw3AoqyqWU8lJ175MEuyPppOkD/yc92eIUwlcyvF0FCyy0rhjT8M/TvuYn05g3fnpQqGWxREZOjNhSjQcRq0sB4byybN7n9w+Lp/mKj4Jm98X8tZ/88Y8/gFOR5C7YwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=949aabce47f447100a1452e1d16d43eb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:04</sys_created_on>
+        <sys_id>d09aabce47f447100a1452e1d16d43e9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
+        <ui_id>bd8d1efa-dffe-486f-a171-9ee8da1dd584</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXTW+jMBD9KxFnhCCkabe3VapKlfohtVUv3S4y2CTWOoa1TdI04r/vGBuCEppNVlRqtUePZ+w3b+YN5nntUOycO2fpyPdRcHJ26vth6PvjcZigII7DcRL78Sh2XIejOQFPhWJGYLlArNDr9XoiCFIER4FX7UXasSzBBVOZM7R6sp5gSWaUYUG4c/784jo5EuCqiHDO11tbh4JiKCYMXB8tqi2QapU3ywqXtV23wwa3ZiMTWEPxXYe8KsIxAQwpYpK4zhxxjFQmVo0FcsZ3nG0MM8qVSXKOXiV9g3vPfO2XEsgqsQQ0y8iSY8zpBVLoQYkiUYVouMpoQqThA5MUFUxN2jbjcJcrmnETYtI20Rkr5vzW0OE0B7RqUUgAQXKdqEZu00gfZtnyvkZ5SXnFid1kWYJYs0JKCRoXSuNZO4SRORwUzVGeUz6NcpEtaBUMWObelMHCS1m2hEslnXIPJRq4B7wi7xLsF5X5CQmqs7iBYyAYAFEGHRKZEsqsEBWViyhhhaw2BOLSnOWUriNXcsKQlJvMgfLod6FxGx5sxpEhTYckgubqOxyxIDa50j1IFyf+puWSjGOqUciWOAAc5cDGjwLCcVsqSSGAYeXVHmX5UyrYu7oduuGudv79oD4lV+VbS27STriLBCu+Hdt11wFWfEFv4oM8vpL84PLPp77j9WQo+IuoktO9TXay6SeZCRUZLluq6uHTcgCEus/vdGcO4tV7qGybp5Qw3PWNudQbW9+Y4f/5jfmUTQ6AcGSqRzmj3IzbgnxU9/v7R+y3rT6r2mvT+5UNyWRXA2igssHb0Uo4AE6thAe4e/Bo8HRArOd91TLbs742WgGEvQkgHPYjgHWTZkNkB+f1G1FXs/Z/0/5o2x9asBUQlF0CO+rO4Ng7h+WugMOjFNxuNrNz8U7P9fyYfEeR7keOgBmE2vsio99oSfGUqM3ttRfO1BKxX137tuOiulBVeh/wMB3tle042EgUlBIJIqF47ZdpAM+j3RkSeMZ83Ag5AEtNxw16Hdw3YDoR2jECSifTqjbtOXLVWG2Tj3p8MH7aL2ldrE4N1jX7Ev9z/Qnh5Q82Mf8huxAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d09aabce47f447100a1452e1d16d43e9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>State = Approved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <generation_source/>
+        <order>13</order>
         <parent_ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>de5303fd4734c3100a1452e1d16d43e6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 20:42:14</sys_updated_on>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
         <ui_id>68656d14-7953-48c9-95b4-9f6069f39cb7</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1UTWsbMRD9K0bnZdkP2018K3UNPTSBtOSSBqGVxrZAK221Wn/U+L93tKt1HKdNTTCUQnXTjObNe6PHPOyIFGRChiCS9Dod8zzN8yxJsqthWozzIs1EzgBSEhHNSsCXFrixAu8rphof2O0+WGAOBE1j3lgL2u33mBeyrhTb3odnGOFLqQTmyeThMSIVs4jowJLJ7iTlthVQxQpQWDg1vCkRdPBpihjnsu2r73q6p/R9D7yLgE6lD2LK80mTiMDGgRaA7eZM1RCRkmnBnLFbMnG2wQCqFrdabQ8vllK7TmnJNrX8gfjDxL+bA0rjYQqHKw0T6odjJIfbykmju4hjheonZ1RT6ptOgp8tzFmj3NFsmxrxoPKUPYmO4fzL0qzv+n4zqVt1ga0ynKnDjTlnZdE4qP13gIJ2KCWrKqkXtLJmJdtipFLGC4WXeK7MGnvWcqFjxj3vGAfE4hnGp234nlnpRXxGGCzet+Lp98b37WQEwrTV3Aqm7Ufh05pbWbn3CLyCQHMfBbsWo9cMwK+f/vsI88myG5pl6Sh9R7VZO8skTShoa5Tyol9a9+Nx7m0m/uppDG46GudKeFb8G0nBxs9iwcWji7n46i+5ODD6x2z8J/Mm2avb6+inW7/WR8atHS7ab02S5CJ/6dOT7BudCiViOhh0qNHZnHuAmQQl6l+I6K0aGtBVaHBYuhfzazpO2vN/915w9z7+BIMOrnMsCAAA</values>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPwfgjydq8jWSBQddCO/rSFSNb14lAljxJzsdC/vuubdkxSelS6EuY3+6XdM7xufbLnnBGpmQEzA9ug0kaBVEU+n54MwqSSZQEIYsoQECGRNIcsFNDqjTDeE1FWSX2+5kGaoHFgZeWWoO0hwPWGTeFoLtn14aZdMUFwzqZvrwOSUE1nmhBk+n+pHQpJEETENj62GI6xWh3RRUzlZY54op5m7xzk3NXGXyfYwWHKjiBPySwtSAZIJCMCgNDklPJqFV6R6ZWl5hA0uxBil3XseLSNkRzujX8D9488qu+DJBZ6kTowtgJ1KSzObX0CU9Obak7vRRPwTSaMMhoKeysn2saHgrLlWxGLE1EO61Emcv7RhHSHdB7H6VBEFBUPCvkDa3saaU2jy3IBZe1JI6iUCkVXUSt1TwpbQVnT0BArXFOi4LLZVxoteb1MELJvaXAwMuE2uCdhi+lR9MKt4eqUm+B+XmdfqaaVyR+4DE4fBgSszMzQY05UkEN499lhaQh5ijEtQq1BHHthGo41bywX/GqNTjgh6EzfTJ+z2Hp7dFQvTOPxt/GYRiMgy+xVBurKY/9GKRWQlQynC/At37tY6twAdB2FX7WBngbuNuGs9xdf3Zw3xTcLow/bRdurmkXHI2rX4Z/rYAfvvuR7Tmpdr3p2d9Y/Oj/Kn0/YtG520+qH/P7Bahavy84CGbegNmaHXKEZSFuYJ8Y3hUHz67Y/QA+zfXBxK+fK/L+f/MfeP0LT/klpf4IAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=de5303fd4734c3100a1452e1d16d43e6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment Approved</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 19:07:12</sys_created_on>
+        <sys_id>f327fbc6477847100a1452e1d16d43eb</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>NowTraining.Administrator</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:56:04</sys_updated_on>
+        <ui_id>570d5d08-3bfa-4e8c-8bc6-a52d26ae5681</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WWyW7bMBCGXyXQ2TJESbbk3IqkAQq0KZCkvQSFMCKHCQFqKUU5cY28e4eSvCXO2qZADz5wuP3zz3yiL5eeEt6hF4tUiJlkgWSMBSyYsJClmGLOk2mCYeqNvBIKpJUGeWUEjeegWxdYLo8MgkWRsTFvjcHS3t3RvFBNrWHxfVhGEX6ttKB57/Dyx8irwdCJFo13uLw39VJJGnLUtPRspem+Rruo3VhUvC1IV6ZWwc/DzuNh5uDTMc3QJieHjTy8tVgKJB0SdIMjr4BSgK3MYh2hpMXXUm8C16q0faIF3DbqF90chW6dRMqMDyash9lgUB+Wx2Dh3JqW29as/aoUx6b3RKCEVtuj7Vi/4GttVVX2WyzkerW70m1RnvaOeOsDturRNiQCa5eoU06XUxby/Lq6OVuJPFFlZ8mQoq446PUIrDUqb62Ts/RadbHP7T6832/U2C0soK5VeZXVppqr7j5SX4yvNA3GUlc3JLNRV+UYuEt1TJWA8QnFj7vwdzDK5f2FjqHN7s5vpfrZ4ifXR4IFSTQLuJ+Ek8iPAw5+norchzyUkzieptOceXcjr1k0RxqaZuMYlSr72bqEe/8Gp7LO7M7prGs4t5kbVdsPJG+Ogz93o4GtlD3VyFG46dutMzd83WZhyCYsycrqxhpQWZBhaSqtnXUPOfu4Pfc64l4gdEXcRddn+4UP0D2Ifd7ee3DaTwzIha9Eru/VPcSlwX9E3JDWnyO34/UucTtu/xPgeJ7nMseZz3LO/TjB1E9DSHycBDySYRQEiXwDcM9hFj/dvVtPWFlZJRWHrogb0GYgkjhJJvSLecSCAFg8CZEJNhVxNMOnWDv4UDsvUbz+mXte9gq6013d+7MZ6NswsAvf2VZ8YC96mr0etbe8dlRgnLv6YQFKZ30vPQLkvdz+MpyPKdkhFqRE7v7HSIVaUNNl3Z53eTrlOYLh1yfuJlfDHs9duncKS4zTHQ/o3i7n+8F98bCnGrTZYEvmDshkZQpwHdFleP+bEM8YJlGY+rNpSN8EjCZ+LqLIZ/SNQASUoXifR/jHb0+5Q9LiCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f327fbc6477847100a1452e1d16d43eb"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8db722f54770c3100a1452e1d16d435f"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8db722f54770c3100a1452e1d16d435f^sys_idNOT IN5a5303fd4734c3100a1452e1d16d43e9,965303fd4734c3100a1452e1d16d43e4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8db722f54770c3100a1452e1d16d435f^sys_idNOT IN1c9aabce47f447100a1452e1d16d43ec,589aabce47f447100a1452e1d16d43ea,5c9aabce47f447100a1452e1d16d43e2,965303fd4734c3100a1452e1d16d43e4,c461634e47b447100a1452e1d16d43c3"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">9e5303fd4734c3100a1452e1d16d43e8</block>
+        <block display_value="">149aabce47f447100a1452e1d16d43ec</block>
         <comment/>
-        <connected_to>da2c1b98-fc93-49ab-8385-dfa6b97caecc</connected_to>
+        <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:04</sys_created_on>
+        <sys_id>1c9aabce47f447100a1452e1d16d43ec</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:54:38</sys_updated_on>
+        <ui_id>1c0526f0-4924-42ab-a024-03cbc7c15dd6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">509aabce47f447100a1452e1d16d43ea</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:04</sys_created_on>
+        <sys_id>589aabce47f447100a1452e1d16d43ea</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:54:38</sys_updated_on>
+        <ui_id>1a970d04-6ab6-4535-8d73-894b15887c42</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V247TMBD9lSrPbZT0Rtu3VWElJGAldrUvsIom9qS1cOxgO70Q5WP4Fn6McS7diu2KFYI33uIz45lzxnOUKtClK0pn7/SVtWKjgtWnh2EglMfouwoU5BisAqYVF05olTTAMNiBLH3gzYEhx3IAAwYFMMGB4yD/8f0gcqA0Lmwh4Xj/smy2FZIb7FgUYKiXQxOsql9C7lhgIiFFSUVvnRFqQ9cFp1MWQRYvWcwm4/lkHEXjxTRO55M0HvMJIEwor7+47kUN3jXI8Fm1vh/htu+kDfe04mgY4MGh4kitM5AWh0EOioPT5nhCDAK/UfIR2ArlqFzgkw9WfKPa49nMJ2ZIGhm2wdMx6cbYwmyrBcObwhNsEQep7O4wLctcfWh1+AfADErp+gcgpLRUDwtP2rPoKGW3W73/2De8FqoR2AWlZiBPJ3A0hrR0aP3DoMScCiU5FAUNJymM3onmMnHJw42kQ5hJvaemfsNCYJ54SDOC8Jrw1w18D0Z4Fe+pDF1uaaZgBUuabaRyzpCEuhlL8rX0hFqBnZSknQYlWGZE4a6ozw471vXw6SqfbXFVpXzBY5rViGcZjqaLeTaC+FU8WiIuOMSczxbTcK1L5er6cxlFE6yqNT2sQ57EISsNzc2FzoBQNIWwXW93rOunJvi3zf6Gh5Ywy2ZxNLvsoen8kocuuOd544x/Yxz/1C/0TRRF/41zbhxhk9YAnbam+R/75sGbpO1g273hyIQlIncee9v/KXzgSAsg2Dm01+aLl/CI1T8BKfT9tXMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1c9aabce47f447100a1452e1d16d43e1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 20:42:14</sys_created_on>
-        <sys_id>5a5303fd4734c3100a1452e1d16d43e9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2026-05-13 18:12:04</sys_created_on>
+        <sys_id>5c9aabce47f447100a1452e1d16d43e2</sys_id>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
-        <ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</ui_id>
+        <sys_updated_on>2026-05-13 19:54:38</sys_updated_on>
+        <ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYBnWdAjft6CFgEKNA2QBLm0gbCiVjZbilRJyo5r+N+71MMxkhgtgqCn3sTZ5e7MclY7phtXN87e6QtrxVKxxdeHgAnlMfreMQUVsgXjWhXCCa2yFgjYGmTjA1egYInm7AZro9doKVQIW0vY3p/O4CshC4N9txoM1XRo2GL3LOS2NWYScpRU6NYZoZZ0XRR0KiMo4zmPeZpM0iSKktl5nE/SPE6KFBASyhsufhjIn31ukeCkKt+PcDt00qbwtOIoYPjoUBVIrUuQFgNWgSrAabM9IAahuFbyCVgJ5agc88mPVvyi2sl47BNLJI0cu+DhmPWj62C+0oLjde0JdoiDXPZ3uJZNpb50OvzQsYRGumHohDSW6mHtSXsWPaXydqU3N0PDS6FagX1Qag7ycAJHY8gbR09GD4MSKyqUVVDXNJzMP6ZoLxOXKlxKOoSl1Btq6p0UAvfEQ5oRhJeEf2zhezDCq7iiMnS5o5mDFTxrXUflnCEJ+3Ys2c/GE+oE9lKybhqUYLkRtbugPmvsWe+Dl5Y9cutuB+MpjlM+H814NB2dz9LpCCZzGEXTWTzBpBzTR0jcSB3IzDpwuN9/a6IoJVd+R+7IAS8s/l5l/8FexK/txSsbcXoZkj8sg3++v9yFKIr+L8PxMgibdabutbXN37wLD974XQfb+aZALiwRufPYp+Ev7wNbMoDgx9BGmx9ewhO2/w2IAL0tLwYAAA==</values>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K8bPjpE/kjV5CxuFwbbCGvqyFXMtyYmYLHmSnDQL+e+78kca2pSNsMe9Wed+nXPvAR9C3bqmdXall9aKtQoX3x6jUCiP4fchVFDzcBFSrZhwQquiA6JwC7L1gSUTFGFgOmi0Cdo6WLJaKGGdQcwEjAcrw4WvUk5jIRO2kbB/uLaeboRkhg9MGzAYcdyEi8OLkNs3vJBQcolj7p0Rao3lguGrIlAlc5rQLJ1lKSHpTZ6Us6xMUpYBhwzzxsL3o/DgU4dEb27Ez0PcjpO0YZ5WQqKQPzmuGMfRFUjLo7AGxcBpsz8hhgO7U/IZ2AjlsF3ok5+s+IW90+nUJ1YcNVLeB0/PYlhsD9ONFpTfNZ5gjzgo5VBDtWxr9aXX4U/CK2ilG0+CSGuxH288ac9ioFTdb/Tu6zjwVqhO4BCUmoI8vcDhGsrWcesPwyX35ytqaBpcTtEYvRVdMXKp47XER1xJvcOh3oUxUE88xh1BfIv4hw5+ACO8is/YBot7miVYQYvOsdjOGZRw7NZS/Gw9oV7gIKXot4EJlhrRuCXO2fKB9TF6bfczpx8OlCVzKOd8QudZNclZlU/m5U02IUAgv4GcMXgXWweutcfj95aQjJHXjr+6z79w/hym1TQh08vOz2eXnH/B82/bPf2D3f2B/tLthJD/dj+3u7BFb9tBWzf8arc/emv3E2zvG8apsEhk5bGP4z/AB/ZoAEHPoZ02P7yEZ+z4GzHGLUZNBgAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -533,20 +707,47 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
+        <order>12</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 20:42:14</sys_created_on>
         <sys_id>965303fd4734c3100a1452e1d16d43e4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:38</sys_updated_on>
         <ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPiSHbcb5uwYYCA9YVWItetsKgZToRJkueJCfNgvz3Uf5IizbBhqHH3axHinyPevQh0I2rG2fv9cpasVbB8tvjKBDKY/R9CBRUGCwDrlUhnNAqa4FRsAXZ+MANKFijuVrVtdFbtBQqhK0l7B8uZ/CNkIXBvlsNhmo6NMHy8Crk9jVmEnKUVOjOGaHWdF0UdCoZlNGCRzyJp0nMWDyfRPk0yaO4SAAhobzh4oeB/NXnFhldVOX7EW6HTtoUnlbERgE+OVQFUusSpMVRUIEqwGmzPyEGobhV8hnYCOWoXOCTn6z4RbXjNPWJJZJGjl3wdMz60XUw32jB8bb2BDvEQS77O1zLplJfOh1+6FhCI90wdEIaS/Ww9qQ9i55SebfRu69Dw2uhWoF9UGoO8nQCR2PIG0dPRg+DEisqlFVQ1zSczD+maC8TlypcSzqEpdQ7auqdFAL3xEOaEYTXhH9s4Qcwwqu4oTJ0uaOZgxU8a11H5ZwhCcd2LNnPxhPqBPZSsm4alGC5EbVbUZ8t9qyPo7eWfeHWwwHSGaYJX4znnM3Gk3kyG8N0AWM2m0dTjMuUPkJorQoysw4cHo/fG8aSokPJAW8s/l5l32MvFpCWacTS83sxmZ7bizMbcXkZ4j8sg3++v9wFxtj/ZXi5DMJmnal7bW3zf96FR2/8roPtfFMgF5aI3Hvs0/CX94E9GUDwl9BOmx9ewjN2/A1wvZBsLwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8461634e47b447100a1452e1d16d43c2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">8db722f54770c3100a1452e1d16d435f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 17:31:55</sys_created_on>
+        <sys_id>c461634e47b447100a1452e1d16d43c3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:54:38</sys_updated_on>
+        <ui_id>f83a4d6f-ecc0-469e-a99d-574510b4145e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=8db722f54770c3100a1452e1d16d435f"/>
@@ -613,7 +814,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>enrollment_lifecycle</internal_name>
-        <label_cache>[{"name":"a57e53c9-8c07-4837-a69a-07816e2f5078.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"da2c1b98-fc93-49ab-8385-dfa6b97caecc":["condition"],"dd0bd974-bb9b-4ed7-8796-0d4dadf7b375":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Enrollment Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"a57e53c9-8c07-4837-a69a-07816e2f5078":["approval_conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Enrollment Record","reference":"x_221517_nowtrai_0_enrollment","reference_display":"Enrollment","type":"reference","base_type":"reference","usedInstances":{"e9bfa7c7-abbb-4bc5-8ef6-6148d96b669c":["record"],"a57e53c9-8c07-4837-a69a-07816e2f5078":["record"],"6f549e83-6d4b-4bb9-835a-273d1a91637b":["record"],"68656d14-7953-48c9-95b4-9f6069f39cb7":["record"],"540f668d-e905-4d0b-832e-f28e14921476":["record"],"67f96a99-3186-446b-bdb5-af8a4b74d7a0":["record"],"f8b7c037-cd07-4c47-ac89-8e11bbd3ce75":["conditions"],"e0d34d8b-f32d-4751-a9ce-e56b78d4bb84":["record"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"14eb02da-f326-467c-9a0a-8433c5b26595":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7.Record.roles","label":"2 - Look Up Record➛User Record➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user","column_name":"roles","usedInstances":{}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Enrollment Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_221517_nowtrai_0_enrollment","column_name":"sys_created_by","usedInstances":{"cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7":["conditions"]}},{"name":"Created_1.current.training.capacity","label":"Trigger - Record Created➛Enrollment Record➛Training➛Capacity","reference":"","reference_display":"Capacity","type":"integer","base_type":"integer","parent_table_name":"x_221517_nowtrai_0_training","column_name":"capacity","usedInstances":{"1a970d04-6ab6-4535-8d73-894b15887c42":["condition"]}},{"name":"bd8d1efa-dffe-486f-a171-9ee8da1dd584.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"1a970d04-6ab6-4535-8d73-894b15887c42":["condition"],"924c9d21-4058-49df-9a70-e9e210635404":["capacity"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.training","label":"Trigger - Record Created➛Enrollment Record➛Training","reference":"x_221517_nowtrai_0_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_221517_nowtrai_0_enrollment","column_name":"training","usedInstances":{"bd8d1efa-dffe-486f-a171-9ee8da1dd584":["conditions"],"924c9d21-4058-49df-9a70-e9e210635404":["record"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Enrollment Table","reference":"x_221517_nowtrai_0_enrollment","reference_display":"Enrollment","type":"table_name","base_type":"table_name","usedInstances":{"bd8d1efa-dffe-486f-a171-9ee8da1dd584":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.opened_by.roles","label":"Trigger - Record Created➛Enrollment Record➛Opened by➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user","column_name":"roles","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Enrollment Record","reference":"x_221517_nowtrai_0_enrollment","reference_display":"Enrollment","type":"reference","base_type":"reference","usedInstances":{"e9bfa7c7-abbb-4bc5-8ef6-6148d96b669c":["record"],"a57e53c9-8c07-4837-a69a-07816e2f5078":["record"],"6f549e83-6d4b-4bb9-835a-273d1a91637b":["record"],"68656d14-7953-48c9-95b4-9f6069f39cb7":["record"],"540f668d-e905-4d0b-832e-f28e14921476":["record"],"67f96a99-3186-446b-bdb5-af8a4b74d7a0":["record"],"f8b7c037-cd07-4c47-ac89-8e11bbd3ce75":["conditions"],"e0d34d8b-f32d-4751-a9ce-e56b78d4bb84":["record"],"35513c91-ca8d-48a6-8817-1b1f8903c84f":["record"],"570d5d08-3bfa-4e8c-8bc6-a52d26ae5681":["record"],"1a027e08-ba84-4a42-a92b-845b42f7eb57":["record"]},"attributes":{}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Enrollment Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"a57e53c9-8c07-4837-a69a-07816e2f5078":["approval_conditions"]}},{"name":"a57e53c9-8c07-4837-a69a-07816e2f5078.approval_state","label":"11 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"da2c1b98-fc93-49ab-8385-dfa6b97caecc":["condition"],"dd0bd974-bb9b-4ed7-8796-0d4dadf7b375":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Enrollment Lifecycle</name>
         <natlang/>
@@ -630,7 +831,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e3698fb94774c3100a1452e1d16d4333</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -638,7 +839,7 @@
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:48</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -663,7 +864,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -722,14 +923,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>6b698fb94774c3100a1452e1d16d434d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -747,7 +948,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -806,14 +1007,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>ef698fb94774c3100a1452e1d16d4337</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -851,7 +1052,7 @@
         <trigger_type>record_create</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e3698fb94774c3100a1452e1d16d4333^sys_idNOT IN23698fb94774c3100a1452e1d16d436f,2b698fb94774c3100a1452e1d16d4368,2f698fb94774c3100a1452e1d16d436a,2f698fb94774c3100a1452e1d16d436c,6b698fb94774c3100a1452e1d16d4364,6b698fb94774c3100a1452e1d16d4369,6f698fb94774c3100a1452e1d16d436d,e7698fb94774c3100a1452e1d16d4366"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e3698fb94774c3100a1452e1d16d4333^sys_idNOT IN23698fb94774c3100a1452e1d16d436f,2b698fb94774c3100a1452e1d16d4368,2f698fb94774c3100a1452e1d16d436a,2f698fb94774c3100a1452e1d16d436c,349aebce47f447100a1452e1d16d43d7,58373fc6477847100a1452e1d16d43f7,6b698fb94774c3100a1452e1d16d4364,6b698fb94774c3100a1452e1d16d4369,6f698fb94774c3100a1452e1d16d436d,749aebce47f447100a1452e1d16d43d8,a659b30e477847100a1452e1d16d430f,b49aebce47f447100a1452e1d16d43d5,e7698fb94774c3100a1452e1d16d4366"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
@@ -861,16 +1062,16 @@
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>10</order>
-        <parent_ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</parent_ui_id>
+        <order>18</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>23698fb94774c3100a1452e1d16d436f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:35:13</sys_updated_on>
         <ui_id>e0d34d8b-f32d-4751-a9ce-e56b78d4bb84</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9WWyW7bMBCGXyXQ2TJESbbk3Iq4AQK0KZCkvQSFMCKHMQFqKUVlqZF371CSt8TN1qZADz5wuP3zz3yiL5eeEt6hF4tUiJlkgWSMBSyYsJClmGLOk2mCYeqNvBIKpJUGeWUEja9Bty6wXB4ZBIsiY2PeGoOlvb+neaGaWsPdt2EZRfhCaUHz3uHl95FXg6ETLRrvcPlg6qWSNOSoaenZStNDjfaudmNR8bYgXZlaBT8NO+fDzMHJnGZok5PDRh7eWiwFkg4JusGRV0ApwFbmbh2hpMWXUm8CC1XaPtECbhv1k26OQrdOImXGBxPWw2wwqA/LOVg4t6bltjVrvyrFsek9ESih1fZoO9Yv+FJbVZX9Fgu5Xu2udFuUp70j3vqArXq0DYnA2iXqlNPllIU8X1Q3ZyuRx6rsLBlS1BUHvR6BtUblrXVyll6rLva53Yf3+40au4UF1LUqr7LaVNequ4/UF+MrTYOx1NUNyWzUVTkG7lIdUyVgfEzxeRf+Bka5vD/TMbTZ3fm1VD9aPHF9JFiQRLOA+0k4ifw44ODnqch9yEM5ieNpOs2Zdz/ymrvmSEPTbByjUmU/Wpdw79/gVNaZ3TmddQ3nNnOjavuB5F3j4M/9aGArZU81chRu+nbrzA1ft1kYsglLsrK6sQZUFmRYmkprZ91jzj5uz72OuBcIXRF30fXZfuEDdI9in7b3Hpz2EwNy4SuR63t1D3Fp8B8RN6T158jteL1L3I7b/wQ4nue5zHHms5xzP04w9dMQEh8nAY9kGAVBIt8A3HOYxU9379YTVlZWScWhK+IGtCSANE6SCf1iHrEgABZPQmSCTUUcAX+KtYMzdF6ieP0z97zsFXSnu7r3ZzPQt2FgF76zrfjAXvQ0ez1qb3ntqMB47eqHBSid9b30GyAf5PaX4fydkh1iQUrk7n+MVKgFNV3W7XmXp1OeIxi+OHY3uRr2eO7SvVNYYpzueET3djnfD+6Lxz3VoM0GWzJ3QCYrU4DriC7Dh9+EeMYwicLUn01D+iZgNPFzEUU+o28EIqAMxfs8wt9/AdeH+HHiCgAA</values>
@@ -885,16 +1086,16 @@
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>3</order>
+        <order>11</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>2b698fb94774c3100a1452e1d16d4368</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
         <ui_id>a57e53c9-8c07-4837-a69a-07816e2f5078</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Y227iOhT9lcrPlHEICYG3qpxKczQXqe3MS6kix3HAR8bJOE5bBvHvsxM7l4GWgRHz0NN5QfK+2GvvrOULd2vEYzRBoyAZsPF4gCMHYxfjwKM4cFnkjvyRSyhGPSTJkkGkYjRVMYwfiChKw3p9qRjRLA6dPi2UYlJvNuCPeZ4Jsvpqw8BCF1zE4EeTu/seyoiCGTVTaLLech0KSZCICQi9rjFtY9SrrBzHKS2WgCvktfGDzZxaz9n7KXggqYSDe4g9aSZjBjgSInLWQ0siY6JTtUITrQowQM3xZylWTcSCS23qXJKnnH+Hhd1BGZcwKIzaHjTD0PbHmJMp0eQGZqa6UE27Uk5ZbloSs4QUQl92bSbgc6Z5Kk2KJpGos1NRLOUn0xDUTND5HEUOIFhW1lkiN2UlN4v08boGecVl1RFbokgpEc2IaK14VOgSzhoxwaoWL0mWcTkPM5U+8CoZoCz7cwGDfiLSR1gz53PZJ7TE3Yeukv4V2KeV+StRvCziI0wDyZseylf5pSB53pYCPQy/FSUSU5gtIay6YFpQ5lHFM30Bqzwwi3nTs3SP6F5u0ZZKZrqW7U/hYOB4ziiU6aNWhIc4ZFKlQpTF77L+n67vOP4fgLHm/60FuYXZsr8ahpXvZ/JXaWefjMNy39nPfWtpyW9Y8wz3A/yKuG/LevXk/xXv2dB3PfgZJS52Bg4OmB8EdIwJDXzfG7othwAB1EBECJ86h7lbBZxgaz8ARk3tC4vj7LrG8SJAS/ccPoycb1H9pjZamg+OpPnLe7zjvyWiF/x2q8vGstPnP6OIcrkvkn8r2PuSR/4g8sc4iM/jBEfnw8D1zgll+Jz5jse82Kee4/4BFWFn384cB8+QNOFMdC9NtWNXTB3PcaI6ANWOqK4srJfgWklVw+dOkCp/6wQ5nbQCjF+Ttt7SBYruJRvrHCT/pYWSexQQLnheMeNFJXQijlPEASBrRfxrUG4LYhv87+jB/auH/78eht5eqnUu5w2raSpjXiLOO6owOzPLL+Tqy90zL+t+CtjAEK36wCEyZ2qzud+Vzu9Oc5y+Dii6eaEXguW/aoJVV3uzs0ldhbX3Qeu0Khue6s3+ykT2Vl4udC/XknHLrbiABgHdu39RzZCBPUOTGZKpZDPUm6EyKizJVZkhAsA1jsq2Xm82xlIoYidwOsM2OyarvIrM6YLFwM3K+pMlrMRg7af4h+yAntT6mxbsbGqastum+uFU4zR94Tun240NqGZ6d8u7p5x3slNu+Fd+p3gmhc1DAo4w2P1OqMn7H0cVnzc2FgAA</values>
@@ -909,16 +1110,16 @@
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>6</order>
+        <order>14</order>
         <parent_ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>2f698fb94774c3100a1452e1d16d436a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
         <ui_id>540f668d-e905-4d0b-832e-f28e14921476</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9WWyW7bMBCGXyXQ2TJESbbk3IqkAQq0KZCkvQSFMCKHCQFqKUU5cY28e4eSvCXO2qZADz5wuP3zz3yiL5eeEt6hF4tUiJlkgWSMBSyYsJClmGLOk2mCYeqNvBIKpJUGeWUEjeegWxdYLo8MgkWRsTFvjcHS3t3RvFBNrWHxfVhGEX6ttKB57/Dyx8irwdCJFo13uLw39VJJGnLUtPRspem+Rruo3VhUvC1IV6ZWwc/DzuNh5uDTMc3QJieHjTy8tVgKJB0SdIMjr4BSgK3MYh2hpMXXUm8C16q0faIF3DbqF90chW6dRMqMDyash9lgUB+Wx2Dh3JqW29as/aoUx6b3RKCEVtuj7Vi/4GttVVX2WyzkerW70m1RnvaOeOsDturRNiQCa5eoU06XUxby/Lq6OVuJPFFlZ8mQoq446PUIrDUqb62Ts/RadbHP7T6832/U2C0soK5VeZXVppqr7j5SX4yvNA3GUlc3JLNRV+UYuEt1TJWA8QnFj7vwdzDK5f2FjqHN7s5vpfrZ4ifXR4IFSTQLuJ+Ek8iPAw5+norchzyUkzieptOceXcjr1k0RxqaZuMYlSr72bqEe/8Gp7LO7M7prGs4t5kbVdsPJG+Ogz93o4GtlD3VyFG46dutMzd83WZhyCYsycrqxhpQWZBhaSqtnXUPOfu4Pfc64l4gdEXcRddn+4UP0D2Ifd7ee3DaTwzIha9Eru/VPcSlwX9E3JDWnyO34/UucTtu/xPgeJ7nMseZz3LO/TjB1E9DSHycBDySYRQEiXwDcM9hFj/dvVtPWFlZJRWHrogb0GYgkjhJJvSLecSCAFg8CZEJNhVxNMOnWDv4UDsvUbz+mXte9gq6013d+7MZ6NswsAvf2VZ8YC96mr0etbe8dlRgnLv6YQFKZ30vPQLkvdz+MpyPKdkhFqRE7v7HSIVaUNNl3Z53eTrlOYLh1yfuJlfDHs9duncKS4zTHQ/o3i7n+8F98bCnGrTZYEvmDshkZQpwHdFleP+bEM8YJlGY+rNpSN8EjCZ+LqLIZ/SNQASUoXifR/jHb0+5Q9LiCgAA</values>
@@ -933,21 +1134,69 @@
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>8</order>
-        <parent_ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</parent_ui_id>
+        <order>16</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>2f698fb94774c3100a1452e1d16d436c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:35:13</sys_updated_on>
         <ui_id>f8b7c037-cd07-4c47-ac89-8e11bbd3ce75</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgo0G2AJttLt0tQJBVzlyZVkkqaGP7vHYqUbdiKbaEOkGBv5nBIvpl5b0j52zLmNL6M6TSZ5tPpcDJOkn4/SUajPsFplvVHJEsyPIg7scQLBp4WZ4LB8AGL0o3Nk8FFoRWMkf/BNExTbgqBn74Grw/BBWbInAuqmYwvv33vxAXWsK+FNZfLnalTgQmcMQGudwHZDlD7VKyHqJrztk/by6LPfkJp6qAknZj9tExSBhhyLAzrxAssKbZKP60tmmF6I8XGMOfSwo6xc/5p+DOcO0mcX84gKsL83HqIQpK8Ob/GFt9aXRJb6uBK5ooTZnw+KMtxKezVts073BSWK+mX+LD9aiXKhfzs0xGvN6hrApbSAAhWuEAd8hBGfjtXj19qlDMuq5yESaEIlLEeYWs1z0rr8CxjJtgCNkILIAKX98jVnFeLAcuiey9g0M2FeoRDDb+XXUwc8C7kFXdnYL+uzF+x5i6KP2Gbikw5F8AQ5EtoVKmrVD4gIkpTTWgsjd8rXnUcJa8ENmYTOaQc/Sgdbp+HEDHySXNLiOaF/QBbPLAQ3KpTa2N4kILTDeWIkpQ7FKZZIH+XsANdLq+AOZZRlHZJqSHJdrX6x1gweQfN/mUE5vdl9Ft7tRTe8ahr4V1th92UiiDBPdunpg2CBNOzSXCQJO9JhHD429Nge1X5FByRVkoPkoxu+GSUtsjncktb+wppzfMTINQ8v3HMjLKnl1AFmuecCdp008zcxM5N0/t/3jRvkuQAiCJfPS4Fl9WzAYC+FvuHB6mXpTs8q+i1da84GzZkXwM4sip6bq2EE+DUSriFs6M7j6cBYt3vK8rs9vraGATQP5sA+r3zCGC5DnOdyIac1y9FV83a/9n5411/oODWgnTVJLBWZ6Ztz+yt9gXcb6XgbbL5mesXOHfmJ+ULiuy8ZguYw9JwHvL6RY+c3jO7Ob32oso+YvFf03xgHKoLVYX3Cs/T9OAXUrb1POU5WkDleAGvaM0IkMMgrBnKVSkpCu/nDZFcJXOujQ3O+43mCwP9yEiBMCM7Z1HlHa29W17Ex+OoU/kxj+pAwmkmgkCiKpBoHUi7sNs0rcEZH6fnblozzEVVDfg0KrbKybRW+oXGdaSQBxhxYlc7EVR6VlC/3/aaJNDY/o5gfRff2edvTYThbNDDo3E/TZMkTeg4mYzH6WSU5SM8HuQbjSJkJIFuCjvnQBXYHtXUqOuc7Pcf31LbNpoTUNUUvFbSfUb3xjZysKC+UQ3rOPDQUDKlBMNyp6PcwT3xxyzgD3wdvrmu8i7+dSr53W6mvakx16/1bij5X5L/KNlHR7EJS3qTlJKLyTgdXwxyOrqYUjy8wNNsOO5TRgb5OZ8C338BGKjjIscVAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2f698fb94774c3100a1452e1d16d436c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:06</sys_created_on>
+        <sys_id>349aebce47f447100a1452e1d16d43d7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
+        <ui_id>bd8d1efa-dffe-486f-a171-9ee8da1dd584</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXTW+jMBD9KxFnhCCkabe3VapKlfohtVUv3S4y2CTWOoa1TdI04r/vGBuCEppNVlRqtUePZ+w3b+YN5nntUOycO2fpyPdRcHJ26vth6PvjcZigII7DcRL78Sh2XIejOQFPhWJGYLlArNDr9XoiCFIER4FX7UXasSzBBVOZM7R6sp5gSWaUYUG4c/784jo5EuCqiHDO11tbh4JiKCYMXB8tqi2QapU3ywqXtV23wwa3ZiMTWEPxXYe8KsIxAQwpYpK4zhxxjFQmVo0FcsZ3nG0MM8qVSXKOXiV9g3vPfO2XEsgqsQQ0y8iSY8zpBVLoQYkiUYVouMpoQqThA5MUFUxN2jbjcJcrmnETYtI20Rkr5vzW0OE0B7RqUUgAQXKdqEZu00gfZtnyvkZ5SXnFid1kWYJYs0JKCRoXSuNZO4SRORwUzVGeUz6NcpEtaBUMWObelMHCS1m2hEslnXIPJRq4B7wi7xLsF5X5CQmqs7iBYyAYAFEGHRKZEsqsEBWViyhhhaw2BOLSnOWUriNXcsKQlJvMgfLod6FxGx5sxpEhTYckgubqOxyxIDa50j1IFyf+puWSjGOqUciWOAAc5cDGjwLCcVsqSSGAYeXVHmX5UyrYu7oduuGudv79oD4lV+VbS27STriLBCu+Hdt11wFWfEFv4oM8vpL84PLPp77j9WQo+IuoktO9TXay6SeZCRUZLluq6uHTcgCEus/vdGcO4tV7qGybp5Qw3PWNudQbW9+Y4f/5jfmUTQ6AcGSqRzmj3IzbgnxU9/v7R+y3rT6r2mvT+5UNyWRXA2igssHb0Uo4AE6thAe4e/Bo8HRArOd91TLbs742WgGEvQkgHPYjgHWTZkNkB+f1G1FXs/Z/0/5o2x9asBUQlF0CO+rO4Ng7h+WugMOjFNxuNrNz8U7P9fyYfEeR7keOgBmE2vsio99oSfGUqM3ttRfO1BKxX137tuOiulBVeh/wMB3tle042EgUlBIJIqF47ZdpAM+j3RkSeMZ83Ag5AEtNxw16Hdw3YDoR2jECSifTqjbtOXLVWG2Tj3p8MH7aL2ldrE4N1jX7Ev9z/Qnh5Q82Mf8huxAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=349aebce47f447100a1452e1d16d43d7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment Approved</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 19:07:14</sys_created_on>
+        <sys_id>58373fc6477847100a1452e1d16d43f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
+        <ui_id>570d5d08-3bfa-4e8c-8bc6-a52d26ae5681</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WWyW7bMBCGXyXQ2TJESbbk3IqkAQq0KZCkvQSFMCKHCQFqKUU5cY28e4eSvCXO2qZADz5wuP3zz3yiL5eeEt6hF4tUiJlkgWSMBSyYsJClmGLOk2mCYeqNvBIKpJUGeWUEjeegWxdYLo8MgkWRsTFvjcHS3t3RvFBNrWHxfVhGEX6ttKB57/Dyx8irwdCJFo13uLw39VJJGnLUtPRspem+Rruo3VhUvC1IV6ZWwc/DzuNh5uDTMc3QJieHjTy8tVgKJB0SdIMjr4BSgK3MYh2hpMXXUm8C16q0faIF3DbqF90chW6dRMqMDyash9lgUB+Wx2Dh3JqW29as/aoUx6b3RKCEVtuj7Vi/4GttVVX2WyzkerW70m1RnvaOeOsDturRNiQCa5eoU06XUxby/Lq6OVuJPFFlZ8mQoq446PUIrDUqb62Ts/RadbHP7T6832/U2C0soK5VeZXVppqr7j5SX4yvNA3GUlc3JLNRV+UYuEt1TJWA8QnFj7vwdzDK5f2FjqHN7s5vpfrZ4ifXR4IFSTQLuJ+Ek8iPAw5+norchzyUkzieptOceXcjr1k0RxqaZuMYlSr72bqEe/8Gp7LO7M7prGs4t5kbVdsPJG+Ogz93o4GtlD3VyFG46dutMzd83WZhyCYsycrqxhpQWZBhaSqtnXUPOfu4Pfc64l4gdEXcRddn+4UP0D2Ifd7ee3DaTwzIha9Eru/VPcSlwX9E3JDWnyO34/UucTtu/xPgeJ7nMseZz3LO/TjB1E9DSHycBDySYRQEiXwDcM9hFj/dvVtPWFlZJRWHrogb0GYgkjhJJvSLecSCAFg8CZEJNhVxNMOnWDv4UDsvUbz+mXte9gq6013d+7MZ6NswsAvf2VZ8YC96mr0etbe8dlRgnLv6YQFKZ30vPQLkvdz+MpyPKdkhFqRE7v7HSIVaUNNl3Z53eTrlOYLh1yfuJlfDHs9duncKS4zTHQ/o3i7n+8F98bCnGrTZYEvmDshkZQpwHdFleP+bEM8YJlGY+rNpSN8EjCZ+LqLIZ/SNQASUoXifR/jHb0+5Q9LiCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=58373fc6477847100a1452e1d16d43f7"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -957,16 +1206,16 @@
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>1</order>
+        <order>10</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>6b698fb94774c3100a1452e1d16d4364</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
         <ui_id>6f549e83-6d4b-4bb9-835a-273d1a91637b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPwfgjydq8jWSBQddCO/rSFSNb14lAljxJzsdC/vuubdkxSelS6EuY3+6XdM7xufbLnnBGpmQEzA9ug0kaBVEU+n54MwqSSZQEIYsoQECGRNIcsFNDqjTDeE1FWSX2+5kGaoHFgZeWWoO0hwPWGTeFoLtn14aZdMUFwzqZvrwOSUE1nmhBk+n+pHQpJEETENj62GI6xWh3RRUzlZY54op5m7xzk3NXGXyfYwWHKjiBPySwtSAZIJCMCgNDklPJqFV6R6ZWl5hA0uxBil3XseLSNkRzujX8D9488qu+DJBZ6kTowtgJ1KSzObX0CU9Obak7vRRPwTSaMMhoKeysn2saHgrLlWxGLE1EO61Emcv7RhHSHdB7H6VBEFBUPCvkDa3saaU2jy3IBZe1JI6iUCkVXUSt1TwpbQVnT0BArXFOi4LLZVxoteb1MELJvaXAwMuE2uCdhi+lR9MKt4eqUm+B+XmdfqaaVyR+4DE4fBgSszMzQY05UkEN499lhaQh5ijEtQq1BHHthGo41bywX/GqNTjgh6EzfTJ+z2Hp7dFQvTOPxt/GYRiMgy+xVBurKY/9GKRWQlQynC/At37tY6twAdB2FX7WBngbuNuGs9xdf3Zw3xTcLow/bRdurmkXHI2rX4Z/rYAfvvuR7Tmpdr3p2d9Y/Oj/Kn0/YuG520+qH/P7Bahavy84CGbegNmaHXKEZSFuYJ8Y3hUHz67Y/QA+zfXBxK+fK/L+f/MfeP0LJZ5h0f4IAAA=</values>
@@ -981,16 +1230,16 @@
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>5</order>
+        <order>13</order>
         <parent_ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>6b698fb94774c3100a1452e1d16d4369</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
         <ui_id>68656d14-7953-48c9-95b4-9f6069f39cb7</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPwfgjydq8jWSBQddCO/rSFSNb14lAljxJzsdC/vuubdkxSelS6EuY3+6XdM7xufbLnnBGpmQEzA9ug0kaBVEU+n54MwqSSZQEIYsoQECGRNIcsFNDqjTDeE1FWSX2+5kGaoHFgZeWWoO0hwPWGTeFoLtn14aZdMUFwzqZvrwOSUE1nmhBk+n+pHQpJEETENj62GI6xWh3RRUzlZY54op5m7xzk3NXGXyfYwWHKjiBPySwtSAZIJCMCgNDklPJqFV6R6ZWl5hA0uxBil3XseLSNkRzujX8D9488qu+DJBZ6kTowtgJ1KSzObX0CU9Obak7vRRPwTSaMMhoKeysn2saHgrLlWxGLE1EO61Emcv7RhHSHdB7H6VBEFBUPCvkDa3saaU2jy3IBZe1JI6iUCkVXUSt1TwpbQVnT0BArXFOi4LLZVxoteb1MELJvaXAwMuE2uCdhi+lR9MKt4eqUm+B+XmdfqaaVyR+4DE4fBgSszMzQY05UkEN499lhaQh5ijEtQq1BHHthGo41bywX/GqNTjgh6EzfTJ+z2Hp7dFQvTOPxt/GYRiMgy+xVBurKY/9GKRWQlQynC/At37tY6twAdB2FX7WBngbuNuGs9xdf3Zw3xTcLow/bRdurmkXHI2rX4Z/rYAfvvuR7Tmpdr3p2d9Y/Oj/Kn0/YtG520+qH/P7Bahavy84CGbegNmaHXKEZSFuYJ8Y3hUHz67Y/QA+zfXBxK+fK/L+f/MfeP0LT/klpf4IAAA=</values>
@@ -1000,32 +1249,56 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
+        <comment>State = Reproved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <generation_source/>
+        <order>17</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:08:49</sys_created_on>
+        <sys_id>6f698fb94774c3100a1452e1d16d436d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:35:13</sys_updated_on>
+        <ui_id>67f96a99-3186-446b-bdb5-af8a4b74d7a0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWXW/aMBT9K8hPncSiBChr2dNUWmlT10rt1JfSWSa+AW+OndkOLUP8913H5kPQda3Ul2q8IN/ra59zOCfhdkEEJwPSA55mx1k/72bdbidNO0e9bNzvjrMO7zKAjLSJYiXgTgO5NhzXMyZrX1gsTgwwB5xmSV4bA8otl9jnwlaSzW/iNqzkUyE59sng9q5NKmbwRAeGDBY7redCkmwMErderTDtYnTzyq+5zusScVGxKp7HyWHstD4PsYNDHk6Wtgk8OFAcEEjBpIU2KZnizGkzJwNnaiwgaX6p5Hy9YyqUC0RL9mDFb7y5l/p9BSCzPIqwXtIoUCgXQ+bYNZ6cu9qs9dIiBxs04VCwWrqT7VrYcFk5oVUYcWwsV9Na1qW6CIqQ9QFbv0dtEQRUnqdHHmgV11N9f7UCeSZUI0mkKHXO5HrFnDNiXDsPZ0FAQqNxyapKqAmtjJ6JZhihlMlE4iIppL7HO62YqITlHneCqrLkDOvDpnzDjPAkvuIxOLxsEzu3J5JZu6GCGtJftUcSiEUKtFGhkYA2TvDDuRGV+4RXzSACX7aj6ceHTzksP94YauvMjfEfaKeTHWYfqNL3zjBBUwrKaCm9DPsBON3uvSwKzwC6isK3xgCPA49p2Kudb8+2LkIjZuHw1bJw9JayEGm8+TD8KwJp58mH7JaTGtfbLftbhw/9UZ2mXd77bsAzZJKiE6xWoVzw9+Fu4PtxeOn4yxLzDF6rxJwJkNw+QnQVFygRtwMaiO9EJjZbN7G5foW8Wm6yftp83lB6/oM3SaAYah7zjoN96akBdJlp7cy0gu1bBacNE5r1KZVa/6R1RcNfmiR+oQxeIZtMwH3RtVFMnipn5gfZu48j9Zdzd8oJeka4gxEZjdSIPDKX2Kko3EHooJfU3gk/tFCbA1BAy2bA175YLpd3fwBckbWdYQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f698fb94774c3100a1452e1d16d436d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
-        <order>9</order>
-        <parent_ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</parent_ui_id>
+        <order>8</order>
+        <parent_ui_id>1a970d04-6ab6-4535-8d73-894b15887c42</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 21:08:49</sys_created_on>
-        <sys_id>6f698fb94774c3100a1452e1d16d436d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-05-13 18:12:06</sys_created_on>
+        <sys_id>749aebce47f447100a1452e1d16d43d8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
-        <ui_id>67f96a99-3186-446b-bdb5-af8a4b74d7a0</ui_id>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
+        <ui_id>924c9d21-4058-49df-9a70-e9e210635404</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VWXW/aMBT9K8hPncSiBGhH2dNUWmlT10rt1JfSWSa+AW+OndkOLUP8913H5kPQda3Ul2q8IN/ra59zOCfhdkEEJwPSA55mx9lR3s263U6advq9bHzUHWcd3mUAGWkTxUrAnQZybTiuZ0zWvrBYnBhgDjjNkrw2BpRbLrHPha0km9/EbVjJp0Jy7JPB7V2bVMzgiQ4MGSx2Ws+FJNkYJG69WmHaxejmlV9zndcl4qJiVTyPk8PYaX0eYgeHPJwsbRN4cKA4IJCCSQttUjLFmdNmTgbO1FhA0vxSyfl6x1QoF4iW7MGK33hzL/X7CkBmeRRhvaRRoFAuhsyxazw5d7VZ66VFDjZowqFgtXQn27Ww4bJyQqsw4thYrqa1rEt1ERQh6wO2fo/aIgioPE+PPNAqrqf6/moF8kyoRpJIUeqcyfWKOWfEuHYezoKAhEbjklWVUBNaGT0TzTBCKZOJxEVSSH2Pd1oxUQnLPe4EVWXJGdaHTfmGGeFJfMVjcHjZJnZuTySzdkMFNaS/ao8kEIsUaKNCIwFtnOCHcyMq9wmvmkEEvmxH048Pn3JYfrwx1NaZG+M/0E4nO8w+UKXvnWGCphSU0VJ6GfYDcLrde1kUngF0FYVvjQEeBx7TsFc7355tXYRGzMLhq2Wh/5ayEGm8+TD8KwJp58mH7JaTGtfbLftbhw/9UZ2mXd77bsAzZJKiE6xWoVzw9+Fu4PtxeOn4yxLzDF6rxJwJkNw+QnQVFygRtwMaiO9EJjZbN7G5foW8Wm6yo7T5vKH0/AdvkkAx1DzmHQf70lMD6DLT2plpBdu3Ck4bJrRPqdT6J60rGv7RJPELVfAC2WQC7ouujWLyVDkzP8jefRypvxy7U07QMsIdjMhopEbkkbnETkXhDkIHraT2TvihhdocgPpZNgO+tsVyubz7A8WmNaZgCgAA</values>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K8jnNor7RdvbqhXSSixIgLiwKJrYk2LJcbKOA3Sj/vedJE5blYotWi5oe/N8+b2XefVDxZRkczZCGfIZn4ghHw4HYTiYjng8GcZ8IIeAyFmPGUiRKi2KzEo6P4Mu60BVLSyCQxnxQJTWonGBs6CMMqvNhgqlKnIN63tfTxHxpLSkQjZ/eOyxHCyNdmjZvDpInYpNQ4yaSm86cIdg3TqvzzITZUoAI9UFL33n0mfOvi8pQ001HB72GL46NBIJSAK6wB5LwUhwmV2zubMlBYi9vDZ6va14Usa1RFN4LdRvunkU1nUJEjPhRdgeIy9QG06W4OCWJgtX2q1emRJYtJpITKDUbrEfawuuc6cy07Y4iHXXnekyNVetImw7YO97lAWBwLzmWSNvaSW3T9nLTQfyQplGEk9RZwL09gTOWRWXroZTMdTYaJxCntMORLnNnlXTTFDSYKXpECQ6e6E7C7UyAYgad0CqQnBB8WUTvgerahI/aAw1b3qsWBcLDUWxo0IaRr/KGklLzFOIGhUaCaJmE+pmYVXuvtFVz+iBb3p+++PxexsmZruF2pu5c8BrNBjwMT+PTPZSb34URp0B3q7/3S7zMRucALKzwV3z8Y+D9k54E7vc7z27ahPeB+NP88H0K/nA0/jyRvjb+oeDd/9g9zap2fhib/UF5CCUW/8sw3AoqyqWU8lJ175MEuyPppOkD/yc92eIUwlcyvF0FCyy0rhjT8M/TvuYn05g3fnpQqGWxREZOjNhSjQcRq0sB4byybN7n9w+Lp/mKj4Jm98X8tZ/88Y8/gFOR5C7YwkAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f698fb94774c3100a1452e1d16d436d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=749aebce47f447100a1452e1d16d43d8"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
-        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
-        <comment>Enrollment request created, and awating approval</comment>
-        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <generation_source/>
@@ -1033,44 +1306,119 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 21:08:49</sys_created_on>
-        <sys_id>e7698fb94774c3100a1452e1d16d4366</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-05-13 19:16:40</sys_created_on>
+        <sys_id>a659b30e477847100a1452e1d16d430f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:53:26</sys_updated_on>
+        <ui_id>cd19ab9e-c93f-4df4-9b83-0a0a48a4dda7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcFgkMFOg2QJP20u0SlEjFxNKkSlJJHMP/vUORsrW2Y1uoUyTYk6HhkHwz895o5G/LkJHwMiSTaJJPJsNxEkX9fhSNRv0Mx2naH2VplOJB2AkFnlPwNDjlFB4fMC/ts15oVGqqwESYLjhefPUrX5w1mzFOFBXh5bfvnbDACs4xsHK53Fo6FQjHKeXgeueRbAEzi2L9iKo1Z/vY3BZ8cgtSEQsl6oT0yVBBKGDIMde0E86xINhItVhbFMXkRvCNYcaEgRND6/yk2TPcO46sX04hqoy6tfUj8gly5vwaG3xrVJmZUnnXbCZZRrXLB6E5Lrm5atqcw01hmBRuiwvb7Za8nItPLh3h+oC6HmCBQiFCCxuoRe7DyG9n8vFzjXLKRJUTv8hlhvn6CRujWFoai2cZUk7ncBCa46Jg4h4VSj6wajNgmXfvOTx0cy4f4VLN7kUXZxZ4F/KKu1OwX1fmr1gxG8VfcExFmZxxYAhyJdSyVFUqH1DGS10tKCy0OytcdSwFrzjWehM5pBz9KC1ulwcfMXJJs1syxQrzJxzxQH1wq06theFBCk42lMukIMyi0A1BWDFUvPu7hP1kubwC3hhKUNzNSgUpNl2rmcxb08Vq9Y+SnGrn/4R6vXgYJ0jIR4iToahrf4TNLyZzJnaF9htubCni4xmsRXzVTOG+tHo579g+7jvAyzk+m5wHUfSeBA2Xvz09t1eoS8ERmcbkIMnIhk9aKoNcLhs63dVRa56fAKHm+Y1lZpAuXkLlaZ4zysm+t9bULmy9tXr/z7fWmyQ5ACLIVY8JzkQ1ggDQ12L/8CD10niLZxW9GkObtWGd7WoAB0YGz62VcAKcWgm3cHdw5/DsgVj3+4oy272+NnoB9M8mgH7vPAJYrsNcJ3JPzuup01az9n+2/njbHyjY2BCv9gms1Z1x2zt7q10B91spuEk2t3L9AufOPJ6+oMjOa7aAGWz19yGnX/TIyD01m9trLyLNI+b/7lv3jEN1oarwXmHUjQ9+baWNUZflaA6VYwVM5IpmQA6NsKIol6UgyM/i/xmCIfdKG++822g+U9CPCCQIMzAzGlTewdq75Yv4eBx1Kj/kQR2Iv00HEEhQBRKsA2kXdpumNTjjcHrupjXFjFfVgM+solFOqpRULzSuI4U8wIgTu9qJoOKzgvr1trdPAnvb3xGs7+Kb/fytKaM4HfTwKOnHcRTFEUmicZLE41Gaj3AyyDcaRUiLDLopnJwDVeB4VFOjrnO0239cS23baE5AVVPwWgr7fd1LTGBhQX2DGtZx4L6hpBI+07HY6ih38J74Y+rxe74O31xXeRf/YJXsbjvTzrQ31681N5Tsi2A/SvrBUmxMo944JtnFOImTi0FORhcTgocXeJIOkz6h2SA/5yjw/Sd8D2qfAxYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a659b30e477847100a1452e1d16d430f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>State = Approved</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:06</sys_created_on>
+        <sys_id>b49aebce47f447100a1452e1d16d43d5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:16:40</sys_updated_on>
+        <ui_id>35513c91-ca8d-48a6-8817-1b1f8903c84f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPwfgjydq8jWSBQddCO/rSFSNb14lAljxJzsdC/vuubdkxSelS6EuY3+6XdM7xufbLnnBGpmQEzA9ug0kaBVEU+n54MwqSSZQEIYsoQECGRNIcsFNDqjTDeE1FWSX2+5kGaoHFgZeWWoO0hwPWGTeFoLtn14aZdMUFwzqZvrwOSUE1nmhBk+n+pHQpJEETENj62GI6xWh3RRUzlZY54op5m7xzk3NXGXyfYwWHKjiBPySwtSAZIJCMCgNDklPJqFV6R6ZWl5hA0uxBil3XseLSNkRzujX8D9488qu+DJBZ6kTowtgJ1KSzObX0CU9Obak7vRRPwTSaMMhoKeysn2saHgrLlWxGLE1EO61Emcv7RhHSHdB7H6VBEFBUPCvkDa3saaU2jy3IBZe1JI6iUCkVXUSt1TwpbQVnT0BArXFOi4LLZVxoteb1MELJvaXAwMuE2uCdhi+lR9MKt4eqUm+B+XmdfqaaVyR+4DE4fBgSszMzQY05UkEN499lhaQh5ijEtQq1BHHthGo41bywX/GqNTjgh6EzfTJ+z2Hp7dFQvTOPxt/GYRiMgy+xVBurKY/9GKRWQlQynC/At37tY6twAdB2FX7WBngbuNuGs9xdf3Zw3xTcLow/bRdurmkXHI2rX4Z/rYAfvvuR7Tmpdr3p2d9Y/Oj/Kn0/YtG520+qH/P7Bahavy84CGbegNmaHXKEZSFuYJ8Y3hUHz67Y/QA+zfXBxK+fK/L+f/MfeP0LT/klpf4IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b49aebce47f447100a1452e1d16d43d5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Enrollment requested</comment>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 21:08:49</sys_created_on>
+        <sys_id>e7698fb94774c3100a1452e1d16d4366</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:07:14</sys_updated_on>
         <ui_id>e9bfa7c7-abbb-4bc5-8ef6-6148d96b669c</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqniJG1S7lZ0kZBYkArLDUKRY4+pJeeA4xTYinffcZKeSznsstJeenz655/54tzOHcmdYyfkMecjQTxBCPGINyA+iSGGlEXDCPzY6Tk5zQBXamCF5jieUVXbwHx+ooEa4Anps1pryM3LC85zWZWKPt90yzDCplJxnHeOb+96Tkk1nmhAO8fzran3SlI0BYVLJwtN2xrNc2nHvGB1hroSuQiedzvH3czR2RhncJOVQ3oOPBnIOaAOQVUFPSejOaem0M/LCCbNL3O1CkxlbtpEM/pUyV94c+DbdQIwM9aZsBwmnUFtWIypoVdG18zUeulXIRlUrSccBK2VOVmPtQsuSyOLvN1iaKoWuwtVZ/lF64izPGCtHnWFIqC0iVrleDlmIa6mxeNkIfJU5o0lXYqqYFQtR9QYLdPaWDlzp5bX+9xuw/v9BgXNwoyWpczvk1IXM9nch+qz/r3CQV+o4hFlVvI+71NmU+1jJWj/FOPjJnxDtbR5/8BjcLO982cuH2o4s33EiRcFI4+5kT8I3NBj1E1jnro09cUgDIfxMCXOS8+pnqsTRatq5RiWKnmobcKtf51TSWN243TSNJzdzLQszTeUN4POn5dex1ZMDjVy4K/6du3MFV9Pie+TAYmSvHg0msrESyDXhVLWul3Ovq/PfYy4dwhdEHfd9Nl+4R10O7Hz9b1HF+1Eh5z/QeTaXt1DXOz9R8R1af05chtebxK34fY/AY6laSpSGLkkZcwNI4jd2KeRCwOPBcIPPC8SnwDuLczCw9279oTlhZFCMtoUcQUaCeLASwUPoyBkAfE8SsKBD4STIQ9xfIi1owlg+hW+gh9/597WvaDuYlP4/nQ6/FYQbNI3WYt38AWH4WtZ+8xzhxWGmS0gZFSqpG2mV4jcyu0v0/makg1kqRDA7I+MkKA4dl3S7PmSt1NcAdVsempvsjVs+dzEe6OwCDnesYP3ejm/ju7r3Z6qwCSdLYk9IBGFzqjtiCbD7Y9COCIQBX7sjoY+fhQgGLgpDwKX4EcCgILw+de8wne/ARE8WqXjCgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e7698fb94774c3100a1452e1d16d4366"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e3698fb94774c3100a1452e1d16d4333"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e3698fb94774c3100a1452e1d16d4333^sys_idNOT IN67698fb94774c3100a1452e1d16d4362,af698fb94774c3100a1452e1d16d435f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e3698fb94774c3100a1452e1d16d4333^sys_idNOT IN709aebce47f447100a1452e1d16d43dd,7c9aebce47f447100a1452e1d16d43f9,af698fb94774c3100a1452e1d16d435f,e461a34e47b447100a1452e1d16d437c,f49aebce47f447100a1452e1d16d43df"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">9e5303fd4734c3100a1452e1d16d43e8</block>
+        <block display_value="">1c9aabce47f447100a1452e1d16d43e1</block>
         <comment/>
-        <connected_to>da2c1b98-fc93-49ab-8385-dfa6b97caecc</connected_to>
+        <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>7</order>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 21:08:49</sys_created_on>
-        <sys_id>67698fb94774c3100a1452e1d16d4362</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_created_on>2026-05-13 18:12:06</sys_created_on>
+        <sys_id>709aebce47f447100a1452e1d16d43dd</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
-        <ui_id>dd0bd974-bb9b-4ed7-8796-0d4dadf7b375</ui_id>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
+        <ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBnWdASr7cgQYACSQMkQS5tIIypkc2WIlWSsuMa/vcOtdhGFrRFfexNfDOceW84D9oyXbuqdvZRX1grForNvjwHTCiP0feWKSiRzRjXKhdOaJU1QMBWIGsfuAUFCzRn91gZvUJLoVzYSsLm6eMMvhQyN9h1q8BQTYeGzbavQiKnAkUERTzlMU+TUZpEUTI5j+ejdB4neQoICRWUMEdJqZc9zbObBgk+5O82lcetM0ItuvNNV+WhB7XJPas4Chi+OFQ5Ep8CpMWAlaBycNps9ohByO+UPABLoRyVYz75xYqf1DAZDn1igSSRYxvcH7Nuci1cXIEDolJzV5sulS+14Gjb4eRYQC3d5THWJtxVXmp7xcFc9re1rEv1uZ0I2xfoH4qQ2hIJrLxST73TUTws9fq+Z3ktVDOVLig1B7k/gaPZzWvn+WwZSiypUFZCVdFEM78AorlMXMpwIekQFlKvqanfvhC4Jx7SYCG8JvyqgZ/ACK/ilsrQ5ZbmHKzgWbOpVI7GhGwXMLuxlxKsPYik6WY/ak+xldyJy9r5+CvciMpdUOcVdjp2wdvFP9r57RaGYxymfDqY8Gg8OJ+k4wGMpjCIxpN4hEkxpI+Q2JJekJl14HC3+1pHUUq7/Q25o0V6Y5RTlT2pu+L33PWOr/7SUslvLOXf8w8dFUXRf0v9s6WEzVojdNqa5id01LO3T9tzP2suLFF79Nin/o/jAxtaLsGPobU2372oA7b7BRkBnAa7BgAA</values>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWaAs2419MxIEKJA2QBPk0gbCiqRiohSp8uHEFfzvXUqyYzQu2qQ99ibOcpczQw7UEhN8E7y7NSvn5IMmy8/3CZE6YvjdEg21IEvCjObSS6OLDkjIBlSIhRWXDGHgZtQYOwr1aMVrqaXzFjE74mJ0a4WMXdobbOTSNQq2d2/tZ2upuBUD0wYsVrywZNn+VJIcx1cUqmzBMpZP5vmE0snZNCvneZlNeA4CchyooBQKt57vJY6uOiT5pXa/bSKOFKV+GNZXw5SbPWgsj6wymhDx5IXmAvlUoJxISA2agzd2e0CsAH6t1TOwltrjOBI3Pzn5HQ+czGZxYyVQIhN98bAsBl97uLoAD0glMB/ssJWtjWTC9eZwUUFQ/vwY6zdcN1Fq3+KhVPtuo0KtP/aOkMOA/TUiEhySEE1UGqkPOqqbtXn8tGd5KXXnylBUhoE6rMCjd2XwkU9LhBLxyosamgYdLRprNrJrRi51+qBwkVbKPOKh8eWmwCLxFI2F9BLxiw6+Ayujig84Bpt7miU4yYruleM4tEmQXULc1p0rcO5ZJLpbfAuRYi95EFf0/sQWZmXjV3jyRgw6dsnL0BzlpW0ZzxZQLsSYLfJqPOXVdLwoz/IxBQrTM5hyDu9S58EHt9t9CZTmnL7MzZvnvC4/C5hVs4zOTudnOj+VnxPJeWVoJr8JTbyxP8wMpfR/aP46NNIV/VMftHWH/8PM3MeA9GcevGbSIbXbiL3f/49iYYuPS7Jj6NHYr1HUM7b7Afgzi7PZBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">149aabce47f447100a1452e1d16d43ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:06</sys_created_on>
+        <sys_id>7c9aebce47f447100a1452e1d16d43f9</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
+        <ui_id>1c0526f0-4924-42ab-a024-03cbc7c15dd6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -1084,20 +1432,74 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
+        <order>12</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:49</sys_created_on>
         <sys_id>af698fb94774c3100a1452e1d16d435f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:49</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
         <ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdDD8utmOAhQIGmAJsilDYQVRdlEKVIlKTuu4H/vUg/baBy0QXPsTZxd7s4Od6CGqNpWtTWPamkMX0uy+PrsES4dht8NkVAysiBUyZxbrmTaAh7Zgqhd4A4krJm+WlaVVltmMJRzUwnYP72dQTdc5Jr13SrQWNMyTRbNbyGeY4EigCKc05DG0SSOgiCajcNsEmdhlMfAIMaCAjImMHU10Ly6bRHvTf52XzncWM3luj/f9lUeBlDp3LEKA4+wF8tkzpBPAcIwj5Qgc7BK74+IZpDfS3ECNlxaLEdc8ovhP7FhlCQusWA4ImVd8HhMe+U6uLgGC0ilprbWfSrdKE6Z6cTJWQG1sKtzrEu4r9yo3RULmRhuK1GX8nOnCDkWGB4KkdogCVa5SR31fo7iYaN2XwaWN1y2qvRBoSiI4wksapfV1vFpCBOsxEJpCVWFiqZuAXh7GbmU/lrgwS+E2mFTt30+UEfcR2HBv0H8uoWfQHM3xR2WwcsdzQwMp2m7qVgOZWLk4BGzNysBxpyGRHXTH7Wj2I3cD5d2+rgrVPPKLrHzlvVzHLzXi3+2800DyZQlMZ2PZjSYjsazeDqCyRxGwXQWTlhUJPjhQ7vwIFJjwbLD4VsdBHHeobhIr4zyUWXf5645JEUSBslld40nl9x1wVfvtFT0B0u59/xLRwVB8N9S/2wpbtLOCP1sbfMPdNSzs0/X86g15QapPTrs0/DHcYE9Lhen59BO6e9uqBN2+AWjT8RtuwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8461634e47b447100a1452e1d16d43c2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>da2c1b98-fc93-49ab-8385-dfa6b97caecc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 17:31:56</sys_created_on>
+        <sys_id>e461a34e47b447100a1452e1d16d437c</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
+        <ui_id>f83a4d6f-ecc0-469e-a99d-574510b4145e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">509aabce47f447100a1452e1d16d43ea</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enrollment Lifecycle">e3698fb94774c3100a1452e1d16d4333</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>14eb02da-f326-467c-9a0a-8433c5b26595</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 18:12:06</sys_created_on>
+        <sys_id>f49aebce47f447100a1452e1d16d43df</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 19:54:40</sys_updated_on>
+        <ui_id>1a970d04-6ab6-4535-8d73-894b15887c42</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWZD8qpNb4DRAgbQBmiCXNhDW5ComSpEqH4ldQR/Tb+mPdSnJTtCkaIq2t97M2eXuzIgDN8wEXwfvrsyJc/JWs+MPNwmTOmL0u2EaKmTHjBstpJdGFx2QsDtQIRZebzkKDCMYcaiBSwECR9W3r1tZAbUJ6WoFu+uXdfONVMLiwKIGS7s8Wnbc/FCSgoaVGZT5Ec/5dLKYTrJsspzl68V0nU/EFBCmNFDBGhW1rvb0R+cdkvxUl9/VEXfeSn07nM+HKZd70FgRWeVZwnDrUQskPiUohwmrQAvwxu4OiEUQF1o9ABupPY1jsXnr5BdaOJnPY2OJJJFjXzwci8HFHi5PwQNRCdwHO7TyjZEcXW+OwBKC8qvHWN9wUUep/RUPa7W/bVSo9LveEXYYsP9ohARHJLCOSiP1QUd5uTH37/csz6TuXBmKynBQhxN48m4dfOTTMFRY0aCigromR4vamjvZXSYuVXqr6JCWytzT0vgqU+CReErGQnpG+GkHX4OVUcVbGkOXe5prcJIX3QumcWQTsjZhbudWCpx7EEnuFp9DpNhLHsQVvT/xCrey9ie0+Q4HHW3yNBCPstA0a7EUObk3FmWJ49lyUY4hf5WPjxCXAnIh5stZujJB+7b9GLJsik2zovfhURR5yoMlJ33qLUhNvqR9SPyubZ9G6d8u+70kHsG8nOfZ/PkkzhbPJfGZDP5m/Ca/iF/89i9MX5Zl/+P3x/GTruhDM2jrlv/F9N3EqPU7D15z6YjaVcTe7P+1YmFHj0vyx9C9sZ+iqAes/Q67pQgu/wYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=e3698fb94774c3100a1452e1d16d4333"/>
@@ -1153,24 +1555,24 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>8db722f54770c3100a1452e1d16d435f</sys_id>
         <latest_snapshot>e3698fb94774c3100a1452e1d16d4333</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-yokohama-12-18-2024__patch11-12-16-2025_01-04-2026_2103.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8db722f54770c3100a1452e1d16d435f^sys_idNOT INff698fb94774c3100a1452e1d16d43c4"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan/>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"ff698fb94774c3100a1452e1d16d43c4","name":"plan","plan_signature":null}}</plan>
         <plan_id>8db722f54770c3100a1452e1d16d435f</plan_id>
-        <snapshot>e3698fb94774c3100a1452e1d16d4333</snapshot>
+        <snapshot>b35280de47b847100a1452e1d16d435b</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 21:08:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ff698fb94774c3100a1452e1d16d43c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:50</sys_updated_on>
+        <sys_updated_on>2026-05-13 19:54:41</sys_updated_on>
         <trigger display_value="">b3698fb94774c3100a1452e1d16d43c1</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8db722f54770c3100a1452e1d16d435f"/>

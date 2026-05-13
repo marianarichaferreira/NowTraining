@@ -15,8 +15,11 @@
         return;
     }
 
-    var selectedDate = getDateFromFormat(newValue, g_user_date_format);
-    var today = new Date().getTime();
+    var selectedDate = new Date(getDateFromFormat(newValue, g_user_date_format));
+	selectedDate.setHours(0, 0, 0, 0);
+
+    var today = new Date();
+	today.setHours(0, 0, 0, 0);
 
     if (selectedDate < today) {
         g_form.clearValue('date');
@@ -30,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>26a57a7147f0c3100a1452e1d16d4369</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Validate Training Date (Past)</sys_name>
         <sys_overrides/>
         <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
@@ -38,7 +41,7 @@
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name>sys_script_client_26a57a7147f0c3100a1452e1d16d4369</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 20:04:04</sys_updated_on>
+        <sys_updated_on>2026-05-13 13:04:52</sys_updated_on>
         <table>x_221517_nowtrai_0_training</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

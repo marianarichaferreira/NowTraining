@@ -84,14 +84,14 @@ current.student = gs.getUserID();]]></script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 13:40:10</sys_created_on>
         <sys_id>afb2a1f1477883100a1452e1d16d43f6</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Training Enrollment Request</sys_name>
         <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
         <sys_policy/>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name>sc_cat_item_producer_afb2a1f1477883100a1452e1d16d43f6</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-05-12 20:36:54</sys_updated_on>
+        <sys_updated_on>2026-05-13 14:36:06</sys_updated_on>
         <table_name>x_221517_nowtrai_0_enrollment</table_name>
         <taxonomy_topic/>
         <template/>
@@ -99,7 +99,7 @@ current.student = gs.getUserID();]]></script>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>32</version>
+        <version>35</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

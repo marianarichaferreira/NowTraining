@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>enrolled_students_report</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+    var reportId = "70ee48d6473c47100a1452e1d16d4337"; 
+
+    template.print('<table style="width:100%; border-collapse: collapse; font-family: Arial; font-size: 12px;">');
+    template.print('<thead><tr style="background-color: #800080; color: white;">');
+    template.print('<th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Student</th>');
+    template.print('<th style="padding: 10px; border: 1px solid #ddd; text-align: left;">E-mail</th>');
+    template.print('</tr></thead><tbody>');
+
+    var gr = new GlideRecord('x_221517_nowtrai_0_enrollment');
+    gr.addQuery('training', current.sys_id);
+    gr.addQuery('state', 3);
+    gr.query();
+
+    var count = 0;
+    while (gr.next()) {
+        count++;
+        var rowColor = (count % 2 === 0) ? '#f2f2f2' : '#ffffff'; 
+        template.print('<tr style="background-color: ' + rowColor + ';">');
+        template.print('<th style="padding: 8px; border: 1px solid #ddd; font-weight: normal;">' + gr.student.getDisplayValue() + '</th>');
+        template.print('<th style="padding: 8px; border: 1px solid #ddd; font-weight: normal;">' + gr.student.email + '</th>');
+        template.print('</tr>');
+    }
+
+    if (count === 0) {
+        template.print('<tr><td colspan="2" style="padding: 10px; border: 1px solid #ddd; text-align: center;">There are no students enrolled yet.</td></tr>');
+    }
+
+    template.print('</tbody></table>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 21:22:01</sys_created_on>
+        <sys_id>20d45016477c47100a1452e1d16d43d8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>enrolled_students_report</sys_name>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_update_name>sys_script_email_20d45016477c47100a1452e1d16d43d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 21:51:33</sys_updated_on>
+    </sys_script_email>
+</record_update>

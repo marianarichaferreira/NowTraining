@@ -2,15 +2,15 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
-        <api_name>x_221517_nowtrai_0.NowTrainingScript</api_name>
+        <api_name>x_221517_nowtrai_0.NowTrainingScript2</api_name>
         <caller_access/>
-        <client_callable>true</client_callable>
+        <client_callable>false</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
-        <name>NowTrainingScript</name>
+        <name>NowTrainingScript2</name>
         <sandbox_callable>false</sandbox_callable>
-        <script><![CDATA[var NowTrainingScript = Class.create();
-NowTrainingScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+        <script><![CDATA[var NowTrainingScript2 = Class.create();
+NowTrainingScript2.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     enrolled: function(trainingId, userId) {
         var gr = new GlideRecord('x_221517_nowtrai_0_enrollment');
@@ -32,6 +32,8 @@ NowTrainingScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
     getEnrolled: function(trainingId) {
         var ga = new GlideAggregate('x_221517_nowtrai_0_enrollment');
         ga.addQuery('training', trainingId);
+		var states = [1, 2]; //stry 14
+        ga.addQuery('state', 'IN', states.join(','));
         ga.addAggregate('COUNT');
         ga.query();
         return ga.next() ? ga.getAggregate('COUNT') : 0;
@@ -47,7 +49,7 @@ NowTrainingScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
         while (gr.next()) {
             var trainingId = gr.getUniqueValue();
             var courseId = gr.course.toString();
-            var trainingDate = new GlideDateTime(gr.date);
+            var trainingDate = new GlideDateTime(gr.date).getDate();//só data
             var instructorId = gr.instructor.toString();
 
             // stry 7
@@ -65,49 +67,28 @@ NowTrainingScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
             if (instructorId == userId) continue;
 
             // str 11
-            var tomorrow = new GlideDateTime();
-            tomorrow.addDaysLocalTime(1);
-            if (trainingDate.getNumericValue() < tomorrow.getNumericValue()) continue;
+            var today = new GlideDateTime().getDate();
+            if (trainingDate.getNumericValue() <= today.getNumericValue()) continue;
 
             availableTrainings.push(trainingId);
         }
 
         return "sys_idIN" + availableTrainings.join(',');
     },
-
-	//stry 3
-    checkTrainingDate: function() {
-        var courseId = this.getParameter('sysparm_course');
-        var newDate = this.getParameter('sysparm_date');
-		var currentRecordId = this.getParameter('sysparm_current_id');
-		
-		var gdt = new GlideDateTime();
-		gdt.setDisplayValue(newDate);
-
-		var formatedDate = gdt.getDate().toString(); 
-
-        var gr = new GlideRecord('x_221517_nowtrai_0_training');
-        gr.addQuery('course', courseId);
-        gr.addQuery('date', 'STARTSWITH', formatedDate);
-		gr.addQuery('sys_id', '!=', currentRecordId); //não pega ele mesmo
-        gr.query();
-
-		return gr.hasNext() ? "true" : "false";
-    },
 	
-    type: 'NowTrainingScript'
+    type: 'NowTrainingScript2'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 14:37:00</sys_created_on>
-        <sys_id>43b669b9477883100a1452e1d16d4307</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>NowTrainingScript</sys_name>
+        <sys_created_on>2026-05-13 14:20:59</sys_created_on>
+        <sys_id>0b5572c6477047100a1452e1d16d43fd</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>NowTrainingScript2</sys_name>
         <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
-        <sys_update_name>sys_script_include_43b669b9477883100a1452e1d16d4307</sys_update_name>
+        <sys_update_name>sys_script_include_0b5572c6477047100a1452e1d16d43fd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-13 14:29:55</sys_updated_on>
+        <sys_updated_on>2026-05-13 17:28:02</sys_updated_on>
     </sys_script_include>
 </record_update>

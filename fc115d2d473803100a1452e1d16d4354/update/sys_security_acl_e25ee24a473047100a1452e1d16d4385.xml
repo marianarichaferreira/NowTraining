@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow read for records in x_221517_nowtrai_0_training, if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_221517_nowtrai_0_training</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[if (gs.getUser().isMemberOf('NowTraining Managers')) {
+    var managerID = gs.getUserID();
+    var trainingID = current.sys_id();
+
+    var grEnroll = new GlideRecord('x_221517_nowtrai_0_enrollment');
+    grEnroll.addQuery('training', trainingID);
+    grEnroll.query();
+
+    while (grEnroll.next()) {
+        if (grEnroll.student.manager.sys_id == managerID) {
+            answer = true;
+            break;
+        }
+    }
+} else {
+    answer = false;
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 13:55:24</sys_created_on>
+        <sys_id>e25ee24a473047100a1452e1d16d4385</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_221517_nowtrai_0_training</sys_name>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_update_name>sys_security_acl_e25ee24a473047100a1452e1d16d4385</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 14:15:19</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

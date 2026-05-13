@@ -44,8 +44,10 @@
 <p style="font-size: 18px;">Hello, <strong>${opened_by.first_name}</strong>!</p>
 <p>Unfortunately, your enrollment has been reproved by your manager.</p>
 <div style="background-color: #f9f9f9; border-left: 4px solid #8e44ad; padding: 15px; margin: 20px 0;">
-<p style="margin: 5px 0;"><strong>Course:</strong> ${course.name}</p>
-<p style="margin: 5px 0;"><strong>Date:</strong> ${date}</p>
+<p style="margin: 5px 0;"><strong>Training:</strong> ${training.name}</p>
+<p style="margin: 5px 0;"><strong>Course:</strong> ${training.course.name}</p>
+<p style="margin: 5px 0;"><strong>Date:</strong> ${training.date}</p>
+<p style="margin: 5px 0;"><strong>Instructor:</strong> ${training.instructor.name}</p>
 <p style="margin: 5px 0;"><strong>State:</strong> <span style="color: #e67e22; font-weight: bold;">Reproved</span></p>
 <p style="margin: 5px 0;"><strong>Reproval Reason:</strong> ${reproval_reason}</p>
 </div>
@@ -77,7 +79,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>70a847754774c3100a1452e1d16d43ac</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Enrollment Reproved</sys_name>
         <sys_overrides/>
         <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
@@ -85,7 +87,7 @@
         <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
         <sys_update_name>sysevent_email_action_70a847754774c3100a1452e1d16d43ac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 21:08:16</sys_updated_on>
+        <sys_updated_on>2026-05-13 16:54:42</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

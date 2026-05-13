@@ -5,7 +5,7 @@
         <element label="Instructor" max_length="32" name="instructor" reference="sys_user" reference_qual="roles=x_221517_nowtrai_0.training_instructor^EQ" reference_qual_condition="roles=x_221517_nowtrai_0.training_instructor^EQ" type="reference"/>
         <element label="Capacity" max_length="40" name="capacity" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
         <index name="index">
             <element name="course"/>
         </index>
