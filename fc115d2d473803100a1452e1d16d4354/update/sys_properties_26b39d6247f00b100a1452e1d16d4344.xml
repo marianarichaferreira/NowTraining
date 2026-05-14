@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Rapid API Integration Target Language</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_221517_nowtrai_0.integration_target_lang</name>
+        <read_roles/>
+        <suffix>integration_target_lang</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 20:30:00</sys_created_on>
+        <sys_id>26b39d6247f00b100a1452e1d16d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_221517_nowtrai_0.integration_target_lang</sys_name>
+        <sys_package display_value="NowTraining" source="x_221517_nowtrai_0">fc115d2d473803100a1452e1d16d4354</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowTraining">fc115d2d473803100a1452e1d16d4354</sys_scope>
+        <sys_update_name>sys_properties_26b39d6247f00b100a1452e1d16d4344</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 20:30:00</sys_updated_on>
+        <type>string</type>
+        <value>en</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=26b39d6247f00b100a1452e1d16d4344"/>
+</record_update>
